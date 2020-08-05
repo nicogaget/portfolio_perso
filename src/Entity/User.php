@@ -79,6 +79,11 @@ class User implements UserInterface
      */
     private $phone;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $photo;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -261,6 +266,18 @@ class User implements UserInterface
     public function setPhone(?int $phone): self
     {
         $this->phone = $phone;
+
+        return $this;
+    }
+
+    public function getPhoto(): ?string
+    {
+        return $this->photo;
+    }
+
+    public function setPhoto(?string $photo): self
+    {
+        $this->photo = $photo;
 
         return $this;
     }
