@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Projet{% endblock %}
+
+{% block body %}
+<div id="admin">
+    <div class="page-title d-flex justify-content-center">
+        <h1>Enregistrement d'un nouveau projet</h1>
+    </div>
+    <div class="container-fluid">
+
+    {{ include('projet/_form.html.twig') }}
+
+        <a class="btn btn-info" href="{{ path('projet_index') }}"><i class="fas fa-backward"></i> Retour à la liste</a>
+    </div>
+</div>
+{% endblock %}

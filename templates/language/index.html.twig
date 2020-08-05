@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les languages{% endblock %}
+
+{% block body %}
+    <div id="admin">
+        <div class=" page-title d-flex justify-content-center">
+            <h1>Les langages</h1>
+        </div>
+        <div class="container-fluid">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th>Nom</th>
+                        <th>Icon</th>
+                        <th>actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for language in languages %}
+                    <tr>
+                        <td>{{ language.name }}</td>
+                        <td><i class="{{ language.icon }}" style="font-size: 3em"></i></td>
+                        <td>
+                            <a href="{{ path('language_edit', {'id': language.id}) }}"><i class="fas fa-edit"></i> Edition</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="4">Aucun language enregistré</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        <a class="btn btn-primary" href="{{ path('language_new') }}">Ajouter un language</a>
+        </div>
+    </div>
+{% endblock %}

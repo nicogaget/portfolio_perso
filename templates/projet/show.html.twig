@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet{% endblock %}
+
+{% block body %}
+    <h1>Projet</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td>{{ projet.name }}</td>
+            </tr>
+            <tr>
+                <th>Pitch</th>
+                <td>{{ projet.pitch }}</td>
+            </tr>
+            <tr>
+                <th>Logo</th>
+                <td>{{ projet.logo }}</td>
+            </tr>
+            <tr>
+                <th>Cover</th>
+                <td>{{ projet.cover }}</td>
+            </tr>
+            <tr>
+                <th>Description1</th>
+                <td>{{ projet.description1 }}</td>
+            </tr>
+            <tr>
+                <th>Description2</th>
+                <td>{{ projet.description2 }}</td>
+            </tr>
+            <tr>
+                <th>Link</th>
+                <td>{{ projet.link }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-info" href="{{ path('projet_index') }}"><i class="fas fa-backward"></i> Retour à la liste</a>
+
+    <a class="btn btn-primary" href="{{ path('projet_edit', {'id': projet.id}) }}"><i class="fas fa-edit"></i> Modifier ce projet</a>
+
+    {{ include('projet/_delete_form.html.twig') }}
+{% endblock %}

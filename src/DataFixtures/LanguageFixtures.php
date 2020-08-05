@@ -43,14 +43,14 @@ class LanguageFixtures extends Fixture
         $manager->persist($language);
 
         $language = new Language();
-        $language->setName("sass");
+        $language->setName("Sass");
         $language->setIcon("fab fa-sass");
         $this->addReference('SASS', $language);
         $manager->persist($language);
 
         $language = new Language();
-        $language->setName("github");
-        $language->setIcon("fab fa-html5");
+        $language->setName("Github");
+        $language->setIcon("fab fa-github");
         $this->addReference('github', $language);
         $manager->persist($language);
 

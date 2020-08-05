@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/LanguageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/LanguageType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ProjetType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/language/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/language/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/language/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/language/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/language/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/language/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/projet/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/projet/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/projet/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/projet/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/projet/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/projet/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/LanguageFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/LanguageFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +44,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="crud" />
+                    <option name="lastUsedInstant" value="1596638912" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="database" />
                     <option name="lastUsedInstant" value="1596632089" />
@@ -193,11 +216,16 @@
       <workItem from="1596626980290" duration="529000" />
       <workItem from="1596627519932" duration="7235000" />
       <workItem from="1596635509162" duration="2872000" />
+      <workItem from="1596639201383" duration="439000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Suppression projetfixtures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Suppression projetfixtures" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2475" y="226" width="802" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596635708138">
