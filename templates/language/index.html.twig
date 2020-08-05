@@ -3,35 +3,36 @@
 {% block title %}Language index{% endblock %}
 
 {% block body %}
-    <h1>Language index</h1>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Icon</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for language in languages %}
-            <tr>
-                <td>{{ language.id }}</td>
-                <td>{{ language.name }}</td>
-                <td>{{ language.icon }}</td>
-                <td>
-                    <a href="{{ path('language_show', {'id': language.id}) }}">show</a>
-                    <a href="{{ path('language_edit', {'id': language.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="4">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('language_new') }}">Create new</a>
+    <div id="admin">
+        <div class=" page-title d-flex justify-content-center">
+            <h1>Les langages</h1>
+        </div>
+        <div class="container-fluid" id="admin">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th>Nom</th>
+                        <th>Icon</th>
+                        <th>actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for language in languages %}
+                    <tr>
+                        <td>{{ language.name }}</td>
+                        <td><i class="{{ language.icon }}" style="font-size: 3em"></i></td>
+                        <td>
+                            <a href="{{ path('language_edit', {'id': language.id}) }}"><i class="fas fa-edit"></i> Edition</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="4">Aucun language enregistré</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        <a class="btn btn-primary" href="{{ path('language_new') }}">Ajouter un language</a>
+        </div>
+    </div>
 {% endblock %}

@@ -50,7 +50,7 @@ class LanguageFixtures extends Fixture
 
         $language = new Language();
         $language->setName("Github");
-        $language->setIcon("fab fa-html5");
+        $language->setIcon("fab fa-github");
         $this->addReference('github', $language);
         $manager->persist($language);
 

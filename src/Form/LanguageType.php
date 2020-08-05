@@ -14,7 +14,6 @@ class LanguageType extends AbstractType
         $builder
             ->add('name')
             ->add('icon')
-            ->add('projets')
         ;
     }
 
