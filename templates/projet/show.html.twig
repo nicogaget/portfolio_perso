@@ -8,10 +8,6 @@
     <table class="table">
         <tbody>
             <tr>
-                <th>Id</th>
-                <td>{{ projet.id }}</td>
-            </tr>
-            <tr>
                 <th>Name</th>
                 <td>{{ projet.name }}</td>
             </tr>
@@ -42,9 +38,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('projet_index') }}">back to list</a>
+    <a class="btn btn-info" href="{{ path('projet_index') }}"><i class="fas fa-backward"></i> Retour à la liste</a>
 
-    <a href="{{ path('projet_edit', {'id': projet.id}) }}">edit</a>
+    <a class="btn btn-primary" href="{{ path('projet_edit', {'id': projet.id}) }}"><i class="fas fa-edit"></i> Modifier ce projet</a>
 
     {{ include('projet/_delete_form.html.twig') }}
 {% endblock %}
