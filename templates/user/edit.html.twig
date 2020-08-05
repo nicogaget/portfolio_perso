@@ -1,13 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit User{% endblock %}
+{% block title %}Admin Profil{% endblock %}
 
 {% block body %}
-    <h1>Edit User</h1>
+    <div id="admin">
+        <div class="page-title d-flex justify-content-center">
+            <h1>Modification de mon profil</h1>
+        </div>
+        <div class="container-fluid">
+            {{ include('user/_form.html.twig', {'button_label': 'Enregistrer les modifications'}) }}
 
-    {{ include('user/_form.html.twig', {'button_label': 'Update'}) }}
+            <a class="btn btn-info" href="{{ path('admin_index') }}"><i class="fas fa-backward"></i> Retour au menu</a>
 
-    <a href="{{ path('admin_index') }}">Retour au menu</a>
+            {{ include('user/_delete_form.html.twig') }}
+        </div>
 
-    {{ include('user/_delete_form.html.twig') }}
+    </div>
+
 {% endblock %}

@@ -3,59 +3,64 @@
 {% block title %}Admin{% endblock %}
 
 {% block body %}
-    <h1>User</h1>
-
-    <table class="table">
+    <div id="admin">
+        <div class="page-title d-flex justify-content-center">
+            <h1>Mon profil</h1>
+        </div>
+    <div class="container-fluid">
+    <table class="table table-hover">
         <tbody>
-            <tr>
-                <th>Email</th>
+            <tr >
+                <th class="table-primary">Email</th>
                 <td>{{ user.email }}</td>
             </tr>
             <tr>
-                <th>FirstName</th>
+                <th class="table-primary">FirstName</th>
                 <td>{{ user.firstName }}</td>
             </tr>
             <tr>
-                <th>LastName</th>
+                <th class="table-primary">LastName</th>
                 <td>{{ user.lastName }}</td>
             </tr>
             <tr>
-                <th>Photo</th>
+                <th class="table-primary">Photo</th>
                 <td>{{ user.photo }}</td>
             </tr>
             <tr>
-                <th>Description1</th>
+                <th class="table-primary">Description1</th>
                 <td>{{ user.description1 }}</td>
             </tr>
             <tr>
-                <th>Description2</th>
+                <th class="table-primary">Description2</th>
                 <td>{{ user.description2 }}</td>
             </tr>
             <tr>
-                <th>Facebook</th>
+                <th class="table-primary">Facebook</th>
                 <td>{{ user.facebook }}</td>
             </tr>
             <tr>
-                <th>Linkedin</th>
+                <th class="table-primary">Linkedin</th>
                 <td>{{ user.linkedin }}</td>
             </tr>
             <tr>
-                <th>Github</th>
+                <th class="table-primary">Github</th>
                 <td>{{ user.github }}</td>
             </tr>
             <tr>
-                <th>Adress</th>
+                <th class="table-primary">Adress</th>
                 <td>{{ user.adress }}</td>
             </tr>
             <tr>
-                <th>Phone</th>
-                <td>{{ user.phone }}</td>
+                <th class="table-primary">Phone</th>
+                <td >{{ user.phone }}</td>
             </tr>
         </tbody>
     </table>
 
 
-    <a href="{{ path('user_edit', {'id': user.id}) }}">edit</a>
+    <a class="btn btn-primary" href="{{ path('user_edit', {'id': user.id}) }}">Modifier</a>
 
     {{ include('user/_delete_form.html.twig') }}
+        </div>
+    </div>
 {% endblock %}
