@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin{% endblock %}
+
+{% block body %}
+    <div id="admin">
+        <div class="page-title d-flex justify-content-center">
+            <h1>Mon profil</h1>
+        </div>
+    <div class="container-fluid">
+    <table class="table table-hover">
+        <tbody>
+            <tr >
+                <th class="table-primary">Email</th>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">FirstName</th>
+                <td>{{ user.firstName }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">LastName</th>
+                <td>{{ user.lastName }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">Photo</th>
+                <td>{{ user.photo }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">Description1</th>
+                <td>{{ user.description1 }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">Description2</th>
+                <td>{{ user.description2 }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">Facebook</th>
+                <td>{{ user.facebook }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">Linkedin</th>
+                <td>{{ user.linkedin }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">Github</th>
+                <td>{{ user.github }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">Adress</th>
+                <td>{{ user.adress }}</td>
+            </tr>
+            <tr>
+                <th class="table-primary">Phone</th>
+                <td >{{ user.phone }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <a class="btn btn-primary" href="{{ path('user_edit', {'id': user.id}) }}">Modifier</a>
+
+    {{ include('user/_delete_form.html.twig') }}
+        </div>
+    </div>
+{% endblock %}
