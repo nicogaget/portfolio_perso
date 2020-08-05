@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="database" />
+                    <option name="lastUsedInstant" value="1596632089" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="navbar" />
                     <option name="lastUsedInstant" value="1596625804" />
@@ -155,6 +153,8 @@
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ffoqUYcagSZtnskikn67Tr3PKB" />
@@ -163,14 +163,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/build/images/icons" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/lyon-0320-escalagones" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/build" />
+      <recent name="$PROJECT_DIR$/assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/build/images/icons" />
@@ -188,7 +191,8 @@
       <updated>1596618698640</updated>
       <workItem from="1596618699747" duration="5099000" />
       <workItem from="1596626980290" duration="529000" />
-      <workItem from="1596627519932" duration="388000" />
+      <workItem from="1596627519932" duration="7235000" />
+      <workItem from="1596635509162" duration="2872000" />
     </task>
     <servers />
   </component>
@@ -196,10 +200,34 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl" timestamp="1596618760692">
+    <state x="2475" y="226" width="802" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596635708138">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596618760692" />
+    <state x="2475" y="226" width="802" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635708138" />
+    <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1596636724444">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636724444" />
+    <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596634524998">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596634524998" />
+    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596635298733">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635298733" />
+    <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl" timestamp="1596637371352">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596637371352" />
+    <state x="2578" y="251" width="595" height="622" key="NewPhpClassDialog" timestamp="1596636706664">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2578" y="251" width="595" height="622" key="NewPhpClassDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636706664" />
+    <state x="2701" y="318" width="350" height="487" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1596636268840">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2701" y="318" width="350" height="487" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636268840" />
     <state x="2636" y="474" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596618801610">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
