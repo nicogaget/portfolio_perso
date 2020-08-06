@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ProfilFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/socialFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e8720b45-05f7-4796-b900-b8d71c626396.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e8720b45-05f7-4796-b900-b8d71c626396.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20200806084917.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20200806084917.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20200806124851.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProfilType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProfilType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -258,10 +253,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596634524998" />
-    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596718078011">
+    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596746869334">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596718078011" />
+    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596746869334" />
     <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635298733" />
     <state x="2460" y="59" width="832" height="1006" key="CommitChangelistDialog2" timestamp="1596662099310">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -296,5 +291,9 @@
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>
     <state x="3840" y="0" width="1134" height="809" key="dock-window-3/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596738580862" />
+    <state x="3840" y="0" width="1520" height="739" key="dock-window-4" timestamp="1596746869790">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state x="3840" y="0" width="1520" height="739" key="dock-window-4/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596746869790" />
   </component>
 </project>

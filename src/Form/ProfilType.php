@@ -8,6 +8,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class ProfilType extends AbstractType
 {
@@ -17,7 +18,10 @@ class ProfilType extends AbstractType
 
             ->add('firstName')
             ->add('lastName')
-            ->add('picture')
+            ->add('pictureFile', VichImageType::class,[
+                'required' => false,
+                'imagine_pattern' => 'thumb',
+            ])
             ->add('description1')
             ->add('description2')
             ->add('adress')

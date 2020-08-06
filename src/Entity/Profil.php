@@ -6,11 +6,15 @@ use App\Repository\ProfilRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Symfony\Component\Validator\Constraints as Assert;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=ProfilRepository::class)
+ * @Vich\Uploadable()
  */
-class Profil
+class Profil implements \Serializable
 {
     /**
      * @ORM\Id()
@@ -33,6 +37,16 @@ class Profil
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $picture;
+
+    /**
+     * @var File|null
+     * @Assert\Image(
+     *     mimeTypes="image/png"
+     * )
+     * @Vich\UploadableField(mapping="profil_picture", fileNameProperty="picture")
+     */
+    private $pictureFile;
+
 
     /**
      * @ORM\Column(type="text", nullable=true)
@@ -284,5 +298,32 @@ class Profil
         $this->instagram = $instagram;
 
         return $this;
+    }
+
+    public function setPictureFile(?File $pictureFile = null): void
+    {
+        $this->pictureFile = $pictureFile;
+
+        if (null !== $pictureFile) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTimeImmutable();
+        }
+    }
+
+    public function getPictureFile(): ?File
+    {
+        return $this->pictureFile;
+    }
+
+    public function serialize ()
+    {
+        return serialize ($this-> id);
+    }
+
+    public function unserialize($serialized)
+    {
+        $this->id = unserialize($serialized);
+
     }
 }

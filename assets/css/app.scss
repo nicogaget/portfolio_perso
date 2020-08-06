@@ -4,28 +4,32 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-
-
 }
 
 .btn {
     border-radius: 5px;
     margin: 10px;
 }
-#admin {
-    .page-title {
-        margin: 30px;
-        padding: 25px;
-    }
-    .container-fluid {
-        width: 70%;
-    }
 
-}
 #fixed {
     position: fixed;
     width: 100%;
-    margin-top: -2.5em;
+    margin-top: -30px;
     z-index: 1000;
 }
+
+#admin {
+    .container-fluid {
+        width: 70%;
+    }
+}
+
+#home {
+
+}
+.page-title {
+    margin: 30px;
+    padding: 25px;
+}
+
 
