@@ -25,11 +25,18 @@ body {
 }
 
 #home {
-
+    .pres-picture {
+        margin:auto;
+    }
 }
 .page-title {
     margin: 30px;
     padding: 25px;
+}
+#presentation {
+    img {
+        margin: 20px auto;
+    }
 }
 
 

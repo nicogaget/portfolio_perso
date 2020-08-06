@@ -18,6 +18,7 @@ class ProfilFixtures extends Fixture
         $profil->setFirstName('Nicolas');
         $profil->setLastName('GAGET');
         $profil->setAdress('Chemin de Lafarge 69550 AMPLEPUIS');
+        $profil->setEmail('n.gaget69@gmail.com');
         $profil->setDescription1('Développeur web');
         $profil->setDescription2('Wilder Promotion mars 2020');
         $profil->setFacebook('facebook.com/nico.gaget');
