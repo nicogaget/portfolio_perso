@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProjetType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProjetType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +153,13 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/symfonycasts/reset-password-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/google-mailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ffoqUYcagSZtnskikn67Tr3PKB" />
@@ -163,20 +170,23 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/lyon-0320-escalagones" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/covers" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/build" />
-      <recent name="$PROJECT_DIR$/assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/covers" />
       <recent name="$PROJECT_DIR$/public/build/images/icons" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/public/build/icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/config/packages" />
+      <recent name="$PROJECT_DIR$/public/build" />
+      <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -192,6 +202,7 @@
       <workItem from="1596627519932" duration="7235000" />
       <workItem from="1596635509162" duration="2872000" />
       <workItem from="1596639201383" duration="439000" />
+      <workItem from="1596702888227" duration="7333000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
@@ -212,21 +223,28 @@
     <option name="LAST_COMMIT_MESSAGE" value="mise en place du login remeber me" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2475" y="226" width="802" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596635708138">
+    <state x="2612" y="447" key="#YAML" timestamp="1596703116618">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2612" y="447" key="#YAML/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596703116618" />
+    <state x="2475" y="226" width="802" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596704707580">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596704707580" />
     <state x="2475" y="226" width="802" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635708138" />
-    <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1596636724444">
+    <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1596708154228">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2657" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596708154228" />
     <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636724444" />
     <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596634524998">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596634524998" />
-    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596635298733">
+    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596709121599">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2613" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596709121599" />
     <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635298733" />
     <state x="2460" y="59" width="832" height="1006" key="CommitChangelistDialog2" timestamp="1596662099310">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -236,9 +254,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596637371352" />
-    <state x="2578" y="251" width="595" height="622" key="NewPhpClassDialog" timestamp="1596636706664">
+    <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog" timestamp="1596708085823">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596708085823" />
     <state x="2578" y="251" width="595" height="622" key="NewPhpClassDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636706664" />
     <state x="2701" y="318" width="350" height="487" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1596636268840">
       <screen x="1920" y="0" width="1920" height="1080" />

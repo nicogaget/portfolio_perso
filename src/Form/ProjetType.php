@@ -6,8 +6,10 @@ use App\Entity\Language;
 use App\Entity\Projet;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class ProjetType extends AbstractType
 {
@@ -17,7 +19,10 @@ class ProjetType extends AbstractType
             ->add('name')
             ->add('pitch')
             ->add('logo')
-            ->add('cover')
+            ->add('coverFile', VichImageType::class, [
+                'required' => false,
+                'imagine_pattern' => 'thumb',
+            ])
             ->add('description1')
             ->add('description2')
             ->add('link')
@@ -26,6 +31,7 @@ class ProjetType extends AbstractType
                 'choice_label'=> 'name',
                 'expanded' => true,
                 'multiple' => true,
+                'required' => true,
             ])
         ;
     }
