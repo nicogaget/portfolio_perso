@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/projet/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ProfilFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/socialFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e8720b45-05f7-4796-b900-b8d71c626396.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e8720b45-05f7-4796-b900-b8d71c626396.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20200806084917.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20200806084917.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20200806124851.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +38,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="admin_navbar" />
-                    <option name="lastUsedInstant" value="1596660832" />
+                    <option name="branchName" value="vichUser" />
+                    <option name="lastUsedInstant" value="1596714818" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1596660725" />
+                    <option name="lastUsedInstant" value="1596714704" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="slugify" />
+                    <option name="lastUsedInstant" value="1596713049" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -170,13 +186,14 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/covers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Service" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Service" />
       <recent name="$PROJECT_DIR$/public/images/covers" />
       <recent name="$PROJECT_DIR$/public/build/images/icons" />
       <recent name="$PROJECT_DIR$/assets/images" />
@@ -232,19 +249,19 @@
     </state>
     <state x="2475" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596704707580" />
     <state x="2475" y="226" width="802" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635708138" />
-    <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1596708154228">
+    <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1596734568595">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2657" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596708154228" />
+    <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596734568595" />
     <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636724444" />
     <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596634524998">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596634524998" />
-    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596709121599">
+    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596718078011">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2613" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596709121599" />
+    <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596718078011" />
     <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635298733" />
     <state x="2460" y="59" width="832" height="1006" key="CommitChangelistDialog2" timestamp="1596662099310">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -254,10 +271,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596637371352" />
-    <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog" timestamp="1596708085823">
+    <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog" timestamp="1596734556037">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596708085823" />
+    <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596734556037" />
     <state x="2578" y="251" width="595" height="622" key="NewPhpClassDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636706664" />
     <state x="2701" y="318" width="350" height="487" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1596636268840">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -267,5 +284,17 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2636" y="474" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596618801610" />
+    <state x="3857" y="0" width="1541" height="995" key="dock-window-1" timestamp="1596735351972">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state x="3857" y="0" width="1541" height="995" key="dock-window-1/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596735351972" />
+    <state x="2499" y="204" width="1922" height="1033" maximized="true" key="dock-window-2" timestamp="1596737246744">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2499" y="204" width="1922" height="1033" maximized="true" key="dock-window-2/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596737246744" />
+    <state x="3840" y="0" width="1134" height="809" key="dock-window-3" timestamp="1596738580862">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state x="3840" y="0" width="1134" height="809" key="dock-window-3/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596738580862" />
   </component>
 </project>
