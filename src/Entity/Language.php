@@ -34,6 +34,11 @@ class Language
      */
     private $projets;
 
+    /**
+     * @ORM\Column(type="string", length=30)
+     */
+    private $slug;
+
     public function __construct()
     {
         $this->projets = new ArrayCollection();
@@ -92,6 +97,18 @@ class Language
             $this->projets->removeElement($projet);
             $projet->removeLanguage($this);
         }
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
 
         return $this;
     }

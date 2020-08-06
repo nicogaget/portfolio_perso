@@ -11,13 +11,14 @@
             <table class="table table-hover">
                 <thead>
                 <tr class="table-primary">
-                    <th>Name</th>
+                    <th>Nom</th>
                     <th>Pitch</th>
                     <th>Logo</th>
-                    <th>Cover</th>
-                    <th>Description1</th>
-                    <th>Description2</th>
-                    <th>Link</th>
+                    <th>Couverture</th>
+                    <th>Description 1</th>
+                    <th>Description 2</th>
+                    <th>Lien</th>
+                    <th>Langages</th>
                     <th>actions</th>
                 </tr>
                 </thead>
@@ -37,6 +38,11 @@
                         <td>{{ projet.description1 }}</td>
                         <td>{{ projet.description2 }}</td>
                         <td>{{ projet.link }}</td>
+                        <td>
+                            {% for language in projet.languages %}
+                                <i class="{{ language.icon }}" style="font-size: 1.8em"></i>
+                            {% endfor %}
+                        </td>
                         <td>
                             <a href="{{ path('projet_show', {'id': projet.id}) }}"><i class="fas fa-search"></i> Apercu</a>
                             <a href="{{ path('projet_edit', {'id': projet.id}) }}"><i class="fas fa-edit"></i> Edition</a>
