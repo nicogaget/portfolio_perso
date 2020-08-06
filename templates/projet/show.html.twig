@@ -21,7 +21,13 @@
             </tr>
             <tr>
                 <th>Cover</th>
-                <td>{{ projet.cover }}</td>
+                <td>
+                    {% if projet.cover %}
+                        <img src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('medium') }}">
+                    {% else %}
+                        <img src="{{ '/images/covers/empty.jpg' | imagine_filter('medium') }}">
+                    {% endif %}
+                </td>
             </tr>
             <tr>
                 <th>Description1</th>

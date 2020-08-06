@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/portfolio</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="portfolio@localhost [2]" uuid="e8720b45-05f7-4796-b900-b8d71c626396">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/portfolio</jdbc-url>
+    </data-source>
   </component>
 </project>
