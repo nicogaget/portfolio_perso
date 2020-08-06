@@ -6,6 +6,7 @@ use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
+
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  */
@@ -35,54 +36,9 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @ORM\OneToOne(targetEntity=Profil::class, cascade={"persist", "remove"})
      */
-    private $firstName;
-
-    /**
-     * @ORM\Column(type="string", length=50)
-     */
-    private $lastName;
-
-    /**
-     * @ORM\Column(type="text", nullable=true)
-     */
-    private $description1;
-
-    /**
-     * @ORM\Column(type="text", nullable=true)
-     */
-    private $description2;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $facebook;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $linkedin;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $github;
-
-    /**
-     * @ORM\Column(type="text")
-     */
-    private $adress;
-
-    /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    private $phone;
-
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $photo;
+    private $profil;
 
     public function getId(): ?int
     {
@@ -162,123 +118,17 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 
-    public function getFirstName(): ?string
+    public function getProfil(): ?Profil
     {
-        return $this->firstName;
+        return $this->profil;
     }
 
-    public function setFirstName(string $firstName): self
+    public function setProfil(?Profil $profil): self
     {
-        $this->firstName = $firstName;
+        $this->profil = $profil;
 
         return $this;
     }
 
-    public function getLastName(): ?string
-    {
-        return $this->lastName;
-    }
 
-    public function setLastName(string $lastName): self
-    {
-        $this->lastName = $lastName;
-
-        return $this;
-    }
-
-    public function getDescription1(): ?string
-    {
-        return $this->description1;
-    }
-
-    public function setDescription1(?string $description1): self
-    {
-        $this->description1 = $description1;
-
-        return $this;
-    }
-
-    public function getDescription2(): ?string
-    {
-        return $this->description2;
-    }
-
-    public function setDescription2(?string $description2): self
-    {
-        $this->description2 = $description2;
-
-        return $this;
-    }
-
-    public function getFacebook(): ?string
-    {
-        return $this->facebook;
-    }
-
-    public function setFacebook(?string $facebook): self
-    {
-        $this->facebook = $facebook;
-
-        return $this;
-    }
-
-    public function getLinkedin(): ?string
-    {
-        return $this->linkedin;
-    }
-
-    public function setLinkedin(?string $linkedin): self
-    {
-        $this->linkedin = $linkedin;
-
-        return $this;
-    }
-
-    public function getGithub(): ?string
-    {
-        return $this->github;
-    }
-
-    public function setGithub(?string $github): self
-    {
-        $this->github = $github;
-
-        return $this;
-    }
-
-    public function getAdress(): ?string
-    {
-        return $this->adress;
-    }
-
-    public function setAdress(string $adress): self
-    {
-        $this->adress = $adress;
-
-        return $this;
-    }
-
-    public function getPhone(): ?int
-    {
-        return $this->phone;
-    }
-
-    public function setPhone(?int $phone): self
-    {
-        $this->phone = $phone;
-
-        return $this;
-    }
-
-    public function getPhoto(): ?string
-    {
-        return $this->photo;
-    }
-
-    public function setPhoto(?string $photo): self
-    {
-        $this->photo = $photo;
-
-        return $this;
-    }
 }

@@ -2,8 +2,10 @@
 
 namespace App\Form;
 
+use App\Entity\Profil;
 use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -13,15 +15,9 @@ class UserType extends AbstractType
     {
         $builder
             ->add('email')
-            ->add('firstName')
-            ->add('lastName')
-            ->add('description1')
-            ->add('description2')
-            ->add('facebook')
-            ->add('linkedin')
-            ->add('github')
-            ->add('adress')
-            ->add('phone')
+            ->add('profil', ProfilType::class, [
+
+            ])
         ;
     }
 
