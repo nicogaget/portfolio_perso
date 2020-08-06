@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Language;
 use App\Form\LanguageType;
 use App\Repository\LanguageRepository;
+use App\Service\Slugify;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -32,9 +33,10 @@ class LanguageController extends AbstractController
     /**
      * @Route("/new", name="language_new", methods={"GET","POST"})
      * @param Request $request
+     * @param Slugify $slug
      * @return Response
      */
-    public function new(Request $request): Response
+    public function new(Request $request, Slugify $slug): Response
     {
         $language = new Language();
         $form = $this->createForm(LanguageType::class, $language);
@@ -42,6 +44,7 @@ class LanguageController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
+            $language->setSlug($slug->generate($language->getName()));
             $entityManager->persist($language);
             $entityManager->flush();
 
@@ -55,19 +58,21 @@ class LanguageController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="language_show", methods={"GET"})
+     * @Route("/{slug}", name="language_show", methods={"GET"})
      * @param Language $language
+     * @param Slugify $slug
      * @return Response
      */
-    public function show(Language $language): Response
+    public function show(Language $language, Slugify $slug): Response
     {
         return $this->render('language/show.html.twig', [
             'language' => $language,
+            'sulgify' => $slug
         ]);
     }
 
     /**
-     * @Route("/{id}/edit", name="language_edit", methods={"GET","POST"})
+     * @Route("/{slug}/edit", name="language_edit", methods={"GET","POST"})
      * @param Request $request
      * @param Language $language
      * @return Response

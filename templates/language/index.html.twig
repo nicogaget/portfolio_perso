@@ -22,7 +22,7 @@
                         <td>{{ language.name }}</td>
                         <td><i class="{{ language.icon }}" style="font-size: 3em"></i></td>
                         <td>
-                            <a href="{{ path('language_edit', {'id': language.id}) }}"><i class="fas fa-edit"></i> Edition</a>
+                            <a href="{{ path('language_edit', {'slug': language.slug}) }}"><i class="fas fa-edit"></i> Edition</a>
                         </td>
                     </tr>
                 {% else %}
