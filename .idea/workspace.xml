@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/LanguageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/LanguageType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ProjetType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/language/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/language/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/language/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/language/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/language/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/language/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/projet/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/projet/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/projet/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/projet/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/projet/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/projet/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/LanguageFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/LanguageFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,20 +26,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="crud" />
-                    <option name="lastUsedInstant" value="1596638912" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="database" />
-                    <option name="lastUsedInstant" value="1596632089" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="navbar" />
-                    <option name="lastUsedInstant" value="1596625804" />
+                    <option name="branchName" value="admin_navbar" />
+                    <option name="lastUsedInstant" value="1596660832" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1596623472" />
+                    <option name="lastUsedInstant" value="1596660725" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -178,6 +151,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/symfonycasts/reset-password-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/google-mailer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ffoqUYcagSZtnskikn67Tr3PKB" />
@@ -218,6 +193,14 @@
       <workItem from="1596635509162" duration="2872000" />
       <workItem from="1596639201383" duration="439000" />
     </task>
+    <task id="LOCAL-00001" summary="mise en place du login remeber me">
+      <created>1596662099338</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596662099338</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +208,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Suppression projetfixtures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Suppression projetfixtures" />
+    <MESSAGE value="mise en place du login remeber me" />
+    <option name="LAST_COMMIT_MESSAGE" value="mise en place du login remeber me" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2475" y="226" width="802" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596635708138">
@@ -244,6 +228,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635298733" />
+    <state x="2460" y="59" width="832" height="1006" key="CommitChangelistDialog2" timestamp="1596662099310">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2460" y="59" width="832" height="1006" key="CommitChangelistDialog2/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596662099310" />
     <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl" timestamp="1596637371352">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
