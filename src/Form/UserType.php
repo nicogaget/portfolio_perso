@@ -6,6 +6,8 @@ use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichFileType;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class UserType extends AbstractType
 {
@@ -15,6 +17,10 @@ class UserType extends AbstractType
             ->add('email')
             ->add('firstName')
             ->add('lastName')
+            ->add('photoFile', VichFileType::class, [
+                'required' => false,
+//                'imagine_pattern' => 'thumb',
+            ])
             ->add('description1')
             ->add('description2')
             ->add('facebook')

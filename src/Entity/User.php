@@ -5,9 +5,13 @@ namespace App\Entity;
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\HttpFoundation\File\File;
+use Symfony\Component\Validator\Constraints as Assert;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @Vich\Uploadable()
  */
 class User implements UserInterface
 {
@@ -88,6 +92,21 @@ class User implements UserInterface
     {
         return $this->id;
     }
+
+    /**
+     * @var File|null
+     * @Assert\Image(
+     *     mimeTypes="image/png"
+     * )
+     * @Vich\UploadableField(mapping="user_photos", fileNameProperty="photo")
+     */
+    private $photoFile;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    private $updatedAt;
+
 
     public function getEmail(): ?string
     {
@@ -278,6 +297,34 @@ class User implements UserInterface
     public function setPhoto(?string $photo): self
     {
         $this->photo = $photo;
+
+        return $this;
+    }
+
+    public function setPhotoFile(?File $photoFile = null): void
+    {
+        $this->photoFile = $photoFile;
+
+        if (null !== $photoFile) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTimeImmutable();
+        }
+    }
+
+    public function getPhotoFile(): ?File
+    {
+        return $this->photoFile;
+    }
+
+    public function getUpdatedAt(): ?\DateTimeInterface
+    {
+        return $this->updatedAt;
+    }
+
+    public function setUpdatedAt(\DateTimeInterface $updatedAt): self
+    {
+        $this->updatedAt = $updatedAt;
 
         return $this;
     }
