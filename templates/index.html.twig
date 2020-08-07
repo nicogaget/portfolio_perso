@@ -1,8 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
+
     <div class="container-fluid" id="home">
         <div class="page-title">
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success d-flex justify-content-center" >
+                    {{ message }}
+                </div>
+            {% endfor %}
         </div>
         <section id="presentation">
             <div class="info">
@@ -11,7 +18,7 @@
                 <hr class="my-4">
                 <p class="lead display-4">{{ profil.description2 }}</p>
             </div>
-            <div class="picture">
+            <div class="picture border-secondary">
                 {% if profil.picture %}
                     <img src="{{ vich_uploader_asset(profil, 'pictureFile') | imagine_filter('medium') }}">
                 {% endif %}
@@ -20,7 +27,7 @@
 
         </section>
 
-        <section id="projet" style="height: 800px">
+        <section id="projet">
             <h1>Mes projets</h1>
         </section>
 
@@ -30,28 +37,112 @@
 
         <section id="contact">
             <h1> Me contacter</h1>
-            {% for message in app.flashes('success') %}
-                <div class="alert alert-success d-flex justify-content-center">
-                    {{ message }}
-                </div>
-            {% endfor %}
-            <div id="contactForm" class="mt-4 container-fluid" style="width: 60%">
+
+            <div id="contactForm" class="mt-4 container-fluid" style="width: 40%">
                 {{ form_start(form) }}
 
-                    <div class="col">{{ form_row(form.firstName) }}</div>
-                    <div class="col">{{ form_row(form.lastName) }}</div>
-
-
-                    <div class="col">{{ form_row(form.email) }}</div>
-                    <div class="col">{{ form_row(form.message) }}</div>
-
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {#                        <label>{{ form_label(form.lastName) }}</label>#}
+                        {{ form_widget(form.lastName,
+                            {'attr' :
+                                {
+                                    'placeholder': 'Nom *',
+                                    'class': 'form-control',
+                                    'id': 'lastName',
+                                    'type': 'text',
+                                    'required' : 'required',
+                                    'data-validation-required-message' : 'Veuillez entrer votre nom'
+                                }
+                            }) }}
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    {#                        <label>{{ form_label(form.lastName) }}</label>#}
+                    {{ form_widget(form.firstName,
+                        {'attr' :
+                            {
+                                'placeholder': 'Prénom *',
+                                'class': 'form-control',
+                                'id': 'firstName',
+                                'type': 'text',
+                                'required' : 'required',
+                                'data-validation-required-message' : 'Veuillez entrer votre prénom'
+                            }
+                        }) }}
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {#                        <label>{{ form_label(form.lastName) }}</label>#}
+                        {{ form_widget(form.email,
+                            {'attr' :
+                                {
+                                    'placeholder': 'Email *',
+                                    'class': 'form-control',
+                                    'id': 'Email',
+                                    'type': 'text',
+                                    'required' : 'required',
+                                    'data-validation-required-message' : 'Veuillez entrer votre email'
+                                }
+                            }) }}
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {#                        <label>{{ form_label(form.lastName) }}</label>#}
+                        {{ form_widget(form.message,
+                            {'attr' :
+                                {
+                                    'placeholder': 'Votre message ...',
+                                    'class': 'form-control form-message',
+                                    'id': 'message',
+                                    'type': 'text',
+                                    'required' : 'required',
+                                    'data-validation-required-message' : 'Veuillez saisir un message'
+                                }
+                            }) }}
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
                 <div class="form-group">
-                    <button class="btn btn-primary">Envoyer</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Envoyer</button>
                 </div>
                 {{ form_end(form) }}
             </div>
         </section>
     </div>
 
+    <!-- Modal -->
+{#    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">#}
+{#        <div class="modal-dialog" role="document">#}
+{#            <div class="modal-content">#}
+{#                <div class="modal-header">#}
+{#                    <h5 class="modal-title" id="exampleModalLabel">Confimer l'envoi du message</h5>#}
+{#                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">#}
+{#                        <span aria-hidden="true">&times;</span>#}
+{#                    </button>#}
+{#                </div>#}
+{#                <div class="modal-body">#}
+{#                    ...#}
+{#                </div>#}
+{#                <div class="modal-footer">#}
+{#                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>#}
+{#                    <button type="button" class="btn btn-primary">Confirmer</button>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
 
 {% endblock %}
+{% block javascripts %}
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+</script>
+
+{% endblock %}
+

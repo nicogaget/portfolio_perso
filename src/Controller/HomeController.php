@@ -33,7 +33,7 @@ class HomeController extends AbstractController
             $notification->notify($contact);
             $this->addFlash('success', "Votre message a bien été envoyé");
 
-            return $this->redirectToRoute('index');
+//            return $this->redirectToRoute('index');
 
         }
 

@@ -6,6 +6,12 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.alert {
+    font-size: 24px;
+    margin: 5px;
+    border-radius: 0 0 5px 5px;
+}
+
 .btn {
     border-radius: 5px;
     margin: 10px;
@@ -36,6 +42,13 @@ body {
 #home {
     .pres-picture {
         margin:auto;
+    }
+    .form-control {
+        font-size: 24px;
+        border-radius: 5px;
+    }
+    .form-message {
+        height: 200px;
     }
 }
 .page-title {
