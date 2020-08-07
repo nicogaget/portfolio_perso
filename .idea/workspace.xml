@@ -4,12 +4,7 @@
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProfilFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProfilFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,6 +210,7 @@
       <workItem from="1596635509162" duration="2872000" />
       <workItem from="1596639201383" duration="439000" />
       <workItem from="1596702888227" duration="7333000" />
+      <workItem from="1596786766577" duration="1733000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
@@ -291,9 +287,9 @@
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>
     <state x="3840" y="0" width="1134" height="809" key="dock-window-3/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596738580862" />
-    <state x="3840" y="0" width="1520" height="970" key="dock-window-4" timestamp="1596748730772">
+    <state x="3840" y="0" width="1520" height="970" key="dock-window-4" timestamp="1596787134454">
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>
-    <state x="3840" y="0" width="1520" height="970" key="dock-window-4/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596748730772" />
+    <state x="3840" y="0" width="1520" height="970" key="dock-window-4/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596787134454" />
   </component>
 </project>

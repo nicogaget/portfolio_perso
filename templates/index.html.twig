@@ -5,24 +5,17 @@
         <div class="page-title">
         </div>
         <section id="presentation">
-            <div class="card mb-3" >
-                <div class="row no-gutters">
-                    <div class="col-md-8" style="min-width: 60%">
-                        <div class="card-body" >
-                            <h1 class="display-2">{{ profil.firstName }} {{ profil.lastName }}</h1>
-                            <p class="lead display-3">{{ profil.description1 }}
-                            <hr class="my-4">
-                            <p class="lead display-4">{{ profil.description2 }}</p>
-                            <p class="lead">
-                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center" >
-                        {% if profil.picture %}
-                            <img src="{{ vich_uploader_asset(profil, 'pictureFile') | imagine_filter('medium') }}">
-                        {% endif %}
-                    </div>
+            <div class="info">
+                <h1 class="display-2">{{ profil.firstName }} {{ profil.lastName }}</h1>
+                <p class="lead display-3">{{ profil.description1 }}
+                <hr class="my-4">
+                <p class="lead display-4">{{ profil.description2 }}</p>
+            </div>
+            <div class="picture">
+                {% if profil.picture %}
+                    <img src="{{ vich_uploader_asset(profil, 'pictureFile') | imagine_filter('medium') }}">
+                {% endif %}
+            </div>
 
                 </div>
             </div>
