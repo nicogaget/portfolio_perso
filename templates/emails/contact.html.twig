@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>{% block title %}Contact{% endblock %}</title>
+
+</head>
+<body style="background:#4e5d6c">
+
+<div>
+    <h1>Page en construction</h1>
+</div>
+<div>
+    <table>
+        <tbody>
+            <tr>
+                <td>Prénom</td>
+                <td>{{ contact.firstName }}</td>
+            </tr>
+            <tr>
+                <td>Nom</td>
+                <td>{{ contact.lastName }}</td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>{{ contact.email }}</td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td>{{ contact.message }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

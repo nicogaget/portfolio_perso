@@ -11,6 +11,15 @@ body {
     margin: 10px;
 }
 
+.navbar {
+    font-size: 24px;
+
+    ul li a {
+        margin: 0 30px;
+    }
+
+}
+
 #fixed {
     position: fixed;
     width: 100%;

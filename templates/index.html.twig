@@ -20,7 +20,7 @@
 
         </section>
 
-        <section id="projet">
+        <section id="projet" style="height: 800px">
             <h1>Mes projets</h1>
         </section>
 
@@ -30,6 +30,26 @@
 
         <section id="contact">
             <h1> Me contacter</h1>
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success d-flex justify-content-center">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            <div id="contactForm" class="mt-4 container-fluid" style="width: 60%">
+                {{ form_start(form) }}
+
+                    <div class="col">{{ form_row(form.firstName) }}</div>
+                    <div class="col">{{ form_row(form.lastName) }}</div>
+
+
+                    <div class="col">{{ form_row(form.email) }}</div>
+                    <div class="col">{{ form_row(form.message) }}</div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary">Envoyer</button>
+                </div>
+                {{ form_end(form) }}
+            </div>
         </section>
     </div>
 
