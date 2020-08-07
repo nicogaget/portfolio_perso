@@ -103,6 +103,11 @@ class Profil implements \Serializable
      */
     private $instagram;
 
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $email;
+
     public function __construct()
     {
         $this->socials = new ArrayCollection();
@@ -325,5 +330,17 @@ class Profil implements \Serializable
     {
         $this->id = unserialize($serialized);
 
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
     }
 }

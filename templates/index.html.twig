@@ -1,25 +1,34 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="" id="home">
+    <div class="container-fluid" id="home">
         <div class="page-title">
-            <h1> Bienvenue sur mon portfolio</h1>
         </div>
-
         <section id="presentation">
-            <h1>Nicolas Gaget</h1>
-            <h2>Développeur web - Lyon</h2>
+            <div class="info">
+                <h1 class="display-2">{{ profil.firstName }} {{ profil.lastName }}</h1>
+                <p class="lead display-3">{{ profil.description1 }}
+                <hr class="my-4">
+                <p class="lead display-4">{{ profil.description2 }}</p>
+            </div>
+            <div class="picture">
+                {% if profil.picture %}
+                    <img src="{{ vich_uploader_asset(profil, 'pictureFile') | imagine_filter('medium') }}">
+                {% endif %}
+            </div>
+
+
         </section>
 
         <section id="projet">
             <h1>Mes projets</h1>
         </section>
 
-        <section id="apropos">
+        <section id="mon-propos">
             <h1>A propos de moi</h1>
         </section>
 
-        <section>
+        <section id="contact">
             <h1> Me contacter</h1>
         </section>
     </div>

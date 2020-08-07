@@ -24,7 +24,10 @@
             </tr>
             <tr>
                 <th class="table-primary">Photo</th>
-                <td><img src="{{ vich_uploader_asset(user.profil, 'pictureFile') | imagine_filter('mini') }}"></td>
+                <td>{% if user.profil.picture %}
+                        <img src="{{ vich_uploader_asset(user.profil, 'pictureFile') | imagine_filter('mini') }}">
+                    {% endif %}
+                </td>
             </tr>
             <tr>
                 <th class="table-primary">Description1</th>

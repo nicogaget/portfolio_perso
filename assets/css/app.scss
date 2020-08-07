@@ -25,11 +25,37 @@ body {
 }
 
 #home {
-
+    .pres-picture {
+        margin:auto;
+    }
 }
 .page-title {
     margin: 30px;
     padding: 25px;
+}
+#presentation {
+    display: flex;
+    flex: 6;
+    flex-wrap: wrap;
+
+    .info {
+        flex: 4;
+        margin: auto;
+        padding: 20px;
+
+    }
+
+    .picture {
+        flex: 2;
+        padding: 30px;
+
+        img {
+            border-radius: 5px;
+            border: solid white 4px;
+            box-shadow: 0px -1px 10px 14px #df691a;
+        }
+    }
+
 }
 
 
