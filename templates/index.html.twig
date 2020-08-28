@@ -37,10 +37,11 @@
                     <h5 class="card-title">{{ projet.pitch }}</h5>
                 </div>
                 {% if projet.cover %}
-                    <img src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('medium') }}">
+                    <img style="height: 300px; width: 80%; display: block;" src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('poster') }}">
                 {% else %}
-                    <img src="{{ '/images/covers/empty.jpg' | imagine_filter('medium') }}">
-                {% endif %}         <div class="card-body ">
+                    <img style="height: 300px; width: 80%; display: block;" src="{{ '/images/covers/empty.jpg' | imagine_filter('poster') }}">
+                {% endif %}
+                <div class="card-body ">
                     <p class="card-text">{{ projet.description1 }}</p>
                 </div>
                 <div class="languages">
