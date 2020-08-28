@@ -17,6 +17,20 @@ class LanguageFixtures extends Fixture
         $slug = new Slugify();
 
         $language = new Language();
+        $language->setName("Linux");
+        $language->setIcon("fab fa-linux");
+        $language->setSlug($slug->generate($language->getName()));
+        $this->addReference('linux', $language);
+        $manager->persist($language);
+
+        $language = new Language();
+        $language->setName("Ubuntu");
+        $language->setIcon("fab fa-ubuntu");
+        $language->setSlug($slug->generate($language->getName()));
+        $this->addReference('ubuntu', $language);
+        $manager->persist($language);
+
+        $language = new Language();
         $language->setName("PHP");
         $language->setIcon("fab fa-php");
         $language->setSlug($slug->generate($language->getName()));
@@ -64,6 +78,7 @@ class LanguageFixtures extends Fixture
         $language->setSlug($slug->generate($language->getName()));
         $this->addReference('github', $language);
         $manager->persist($language);
+
 
         $manager->flush();
     }

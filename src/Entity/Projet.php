@@ -39,9 +39,6 @@ class Projet
 
     /**
      * @var File|null
-     * @Assert\Image(
-     *     mimeTypes="image/jpeg"
-     * )
      * @Vich\UploadableField(mapping="cover_images", fileNameProperty="cover")
      */
     private $coverFile;

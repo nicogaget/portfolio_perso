@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +26,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="presentation" />
-                    <option name="lastUsedInstant" value="1596749134" />
-                  </RecentBranch>
-                  <RecentBranch>
                     <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1596748370" />
+                    <option name="lastUsedInstant" value="1596837460" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="slugify" />
@@ -166,6 +160,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/templating" />
       <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
       <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/captcha-com/captcha" />
+      <path value="$PROJECT_DIR$/vendor/captcha-com/symfony-captcha-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ffoqUYcagSZtnskikn67Tr3PKB" />
@@ -211,6 +209,11 @@
       <workItem from="1596639201383" duration="439000" />
       <workItem from="1596702888227" duration="7333000" />
       <workItem from="1596786766577" duration="2714000" />
+      <workItem from="1597666802741" duration="652000" />
+      <workItem from="1597826626647" duration="224000" />
+      <workItem from="1597827463695" duration="599000" />
+      <workItem from="1598281425386" duration="1235000" />
+      <workItem from="1598617415129" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
@@ -245,9 +248,10 @@
     </state>
     <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596734568595" />
     <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636724444" />
-    <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596634524998">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="555" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598281431587">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="555" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1598281431587" />
     <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596634524998" />
     <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596746869334">
       <screen x="1920" y="0" width="1920" height="1080" />
