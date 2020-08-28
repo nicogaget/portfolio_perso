@@ -3,7 +3,7 @@
 
     <div class="control-group">
         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-            {#                        <label>{{ form_label(form.lastName) }}</label>#}
+
             {{ form_widget(form.lastName,
                 {'attr' :
                     {
@@ -19,7 +19,6 @@
         </div>
     </div>
     <div class="form-group floating-label-form-group controls mb-0 pb-2">
-        {#                        <label>{{ form_label(form.lastName) }}</label>#}
         {{ form_widget(form.firstName,
             {'attr' :
                 {
@@ -35,7 +34,6 @@
     </div>
     <div class="control-group">
         <div class="form-group floating-label-form-group controls mb-0 pb-2">
-            {#                        <label>{{ form_label(form.lastName) }}</label>#}
             {{ form_widget(form.email,
                 {'attr' :
                     {
@@ -67,8 +65,22 @@
             <p class="help-block text-danger"></p>
         </div>
     </div>
+
+       <div class="form-group">
+
+
+
+           {{ form_widget(form.captchaCode, {
+               'attr' : {
+                   'class' : 'form-control',
+                   'placeholder': 'Saisir le code ci-dessus',
+                   'style' : 'margin:10px'
+               }}) }}
+       </div>
+
+
     <div class="form-group">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Envoyer</button>
+        <button class="btn btn-primary" >Envoyer</button>
     </div>
     {{ form_end(form) }}
 </div>
