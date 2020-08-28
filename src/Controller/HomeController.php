@@ -21,7 +21,7 @@ class HomeController extends AbstractController
      * @param ProfilRepository $profilRepo
      * @param Request $request
      * @param ContactNotification $notification
-     * @param Projet $projet
+     * @param ProjetRepository $projetRepo
      * @return Response
      * @Route ("/", name="index")
      */
