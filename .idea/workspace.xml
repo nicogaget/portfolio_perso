@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/_contactFormIndex.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/LanguageFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/LanguageFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProjetsFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProjetsFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +31,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="affichageProjet" />
+                    <option name="lastUsedInstant" value="1598623650" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1596837460" />
+                    <option name="lastUsedInstant" value="1598621791" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="slugify" />
@@ -174,24 +183,24 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/covers/fixtures" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Service" />
-      <recent name="$PROJECT_DIR$/public/images/covers" />
-      <recent name="$PROJECT_DIR$/public/build/images/icons" />
-      <recent name="$PROJECT_DIR$/assets/images" />
-      <recent name="$PROJECT_DIR$/public/build/icons" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/config/packages" />
       <recent name="$PROJECT_DIR$/public/build" />
       <recent name="$PROJECT_DIR$/assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/covers/fixtures" />
+      <recent name="$PROJECT_DIR$/src/Service" />
+      <recent name="$PROJECT_DIR$/public/images/covers" />
+      <recent name="$PROJECT_DIR$/public/build/images/icons" />
+      <recent name="$PROJECT_DIR$/assets/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -213,7 +222,7 @@
       <workItem from="1597826626647" duration="224000" />
       <workItem from="1597827463695" duration="599000" />
       <workItem from="1598281425386" duration="1235000" />
-      <workItem from="1598617415129" duration="363000" />
+      <workItem from="1598617415129" duration="9213000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
@@ -271,6 +280,10 @@
     </state>
     <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596734556037" />
     <state x="2578" y="251" width="595" height="622" key="NewPhpClassDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636706664" />
+    <state x="2676" y="181" width="400" height="761" key="RollbackChangesDialog" timestamp="1598627616665">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2676" y="181" width="400" height="761" key="RollbackChangesDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1598627616665" />
     <state x="2701" y="318" width="350" height="487" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1596636268840">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -279,10 +292,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2636" y="474" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596618801610" />
-    <state x="3857" y="0" width="1541" height="995" key="dock-window-1" timestamp="1596735351972">
+    <state x="3840" y="0" width="924" height="815" key="dock-window-1" timestamp="1598627648657">
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>
     <state x="3857" y="0" width="1541" height="995" key="dock-window-1/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596735351972" />
+    <state x="3840" y="0" width="924" height="815" key="dock-window-1/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1598627648657" />
     <state x="2499" y="204" width="1922" height="1033" maximized="true" key="dock-window-2" timestamp="1596737246744">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
