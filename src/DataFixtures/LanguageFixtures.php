@@ -34,42 +34,42 @@ class LanguageFixtures extends Fixture
         $language->setName("PHP");
         $language->setIcon("fab fa-php");
         $language->setSlug($slug->generate($language->getName()));
-        $this->addReference('PHP', $language);
+        $this->addReference('php', $language);
         $manager->persist($language);
 
         $language = new Language();
         $language->setName("JavaScript");
         $language->setIcon("fab fa-js");
         $language->setSlug($slug->generate($language->getName()));
-        $this->addReference('JavaScript', $language);
+        $this->addReference('js', $language);
         $manager->persist($language);
 
         $language = new Language();
         $language->setName("Symfony");
         $language->setIcon("fab fa-symfony");
         $language->setSlug($slug->generate($language->getName()));
-        $this->addReference('Symfony', $language);
+        $this->addReference('symfony', $language);
         $manager->persist($language);
 
         $language = new Language();
         $language->setName("CSS");
         $language->setIcon("fab fa-css3");
         $language->setSlug($slug->generate($language->getName()));
-        $this->addReference('CSS', $language);
+        $this->addReference('css', $language);
         $manager->persist($language);
 
         $language = new Language();
         $language->setName("HTML");
         $language->setIcon("fab fa-html5");
         $language->setSlug($slug->generate($language->getName()));
-        $this->addReference('HTML', $language);
+        $this->addReference('html', $language);
         $manager->persist($language);
 
         $language = new Language();
         $language->setName("Sass");
         $language->setIcon("fab fa-sass");
         $language->setSlug($slug->generate($language->getName()));
-        $this->addReference('SASS', $language);
+        $this->addReference('sass', $language);
         $manager->persist($language);
 
         $language = new Language();
