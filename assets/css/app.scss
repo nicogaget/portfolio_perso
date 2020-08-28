@@ -43,6 +43,9 @@ body {
 }
 
 #home {
+    h1 {
+        margin: 40px;
+    }
     .pres-picture {
         margin:auto;
     }
@@ -53,6 +56,28 @@ body {
     .form-message {
         height: 200px;
     }
+}
+#projet {
+    .card-deck {
+        width: 80%;
+        margin: auto;
+    }
+    .card {
+        border-radius: 20px;
+        min-width: 500px;
+    }
+    img {
+        padding : 15px;
+        margin: auto;
+    }
+    .languages {
+        margin: auto;
+        padding: 15px
+    }
+    .icon-language {
+        margin: 15px;
+    }
+
 }
 .page-title {
     margin: 30px;
