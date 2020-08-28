@@ -38,6 +38,8 @@ class Contact
      */
     private $message;
 
+    protected $captchaCode;
+
     /**
      * @return string|null
      */
@@ -118,5 +120,14 @@ class Contact
         $this->message = $message;
     }
 
+    public function getCaptchaCode()
+    {
+        return $this->captchaCode;
+    }
+
+    public function setCaptchaCode($captchaCode)
+    {
+        $this->captchaCode = $captchaCode;
+    }
 
 }
