@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/_contactFormIndex.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/LanguageFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/LanguageFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProjetsFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProjetsFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +217,7 @@
       <workItem from="1597826626647" duration="224000" />
       <workItem from="1597827463695" duration="599000" />
       <workItem from="1598281425386" duration="1235000" />
-      <workItem from="1598617415129" duration="9213000" />
+      <workItem from="1598617415129" duration="9709000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
@@ -231,7 +226,63 @@
       <option name="project" value="LOCAL" />
       <updated>1596662099338</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="seaparation du form de l'index">
+      <created>1598627672016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598627672016</updated>
+    </task>
+    <task id="LOCAL-00003" summary="css">
+      <created>1598627689171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598627689171</updated>
+    </task>
+    <task id="LOCAL-00004" summary="HomeController.php">
+      <created>1598627707111</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598627707111</updated>
+    </task>
+    <task id="LOCAL-00005" summary="HomeController.php">
+      <created>1598627720173</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598627720173</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixtures">
+      <created>1598627821772</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598627821772</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixtures">
+      <created>1598627849869</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598627849869</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixtures">
+      <created>1598627858363</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1598627858363</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixtures">
+      <created>1598627862328</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1598627862328</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +291,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Suppression projetfixtures" />
     <MESSAGE value="mise en place du login remeber me" />
-    <option name="LAST_COMMIT_MESSAGE" value="mise en place du login remeber me" />
+    <MESSAGE value="seaparation du form de l'index" />
+    <MESSAGE value="css" />
+    <MESSAGE value="HomeController.php" />
+    <MESSAGE value="fixtures" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixtures" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2612" y="447" key="#YAML" timestamp="1596703116618">
@@ -267,10 +322,14 @@
     </state>
     <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596746869334" />
     <state x="2613" y="322" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635298733" />
-    <state x="2460" y="59" width="832" height="1006" key="CommitChangelistDialog2" timestamp="1596662099310">
+    <state x="2460" y="59" width="832" height="1006" key="CommitChangelistDialog2" timestamp="1598627862290">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2460" y="59" width="832" height="1006" key="CommitChangelistDialog2/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596662099310" />
+    <state x="2460" y="59" width="832" height="1006" key="CommitChangelistDialog2/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1598627862290" />
+    <state x="2103" y="115" width="1538" height="889" key="DiffContextDialog" timestamp="1598627797506">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2103" y="115" width="1538" height="889" key="DiffContextDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1598627797506" />
     <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl" timestamp="1596637371352">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
