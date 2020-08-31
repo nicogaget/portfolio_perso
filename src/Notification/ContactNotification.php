@@ -4,14 +4,16 @@ namespace App\Notification;
 
 use App\Entity\Contact;
 
-use Swift_Mailer;
+
+use Symfony\Component\Mailer\Mailer;
+use Symfony\Component\Mime\Email;
 use Twig\Environment;
 
 class ContactNotification
 {
 
     /**
-     * @var Swift_Mailer
+     * @var Mailer
      */
     private $mailer;
 
@@ -20,7 +22,7 @@ class ContactNotification
      */
     private $renderer;
 
-    public function __construct(Swift_Mailer $mailer, Environment $renderer)
+    public function __construct(Mailer $mailer, Environment $renderer)
     {
         $this->mailer = $mailer;
         $this->renderer = $renderer;
@@ -28,9 +30,9 @@ class ContactNotification
 
     public function notify(Contact $contact)
     {
-        $message = (new \Swift_Message('Demande de Contact'))
+        $message = (new Email('Demande de Contact'))
             ->setFrom('portfolio@mail.com' )
-            ->setTo('n.gaget69@gmail.com')
+            ->setTo('nicolas_gaget@yahoo.fr')
             ->setReplyTo($contact->getEmail())
             ->setBody($this->renderer->render('emails/contact.html.twig', [
                 'contact' => $contact
