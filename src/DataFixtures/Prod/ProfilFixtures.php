@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\DataFixtures;
+namespace App\DataFixtures\Prod;
 
 
 use App\Entity\Profil;
@@ -20,7 +20,7 @@ class ProfilFixtures extends Fixture
         $profil->setAdress('Chemin de Lafarge 69550 AMPLEPUIS');
         $profil->setEmail('n.gaget69@gmail.com');
         $profil->setDescription1('Développeur web');
-        $profil->setDescription2('Wilder Promotion mars 2020');
+        $profil->setDescription2('WILD CODE SCHOOL 2020');
         $profil->setFacebook('facebook.com/nico.gaget');
         $profil->setLinkedin('www.linkedin.com/in/nicolas-gaget');
         $profil->setGithub('https://github.com/nicogaget');
