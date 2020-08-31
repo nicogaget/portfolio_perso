@@ -15,7 +15,7 @@
             <div class="info">
                 <h1 class="display-2">{{ profil.firstName }} {{ profil.lastName }}</h1>
                 <p class="lead display-3">{{ profil.description1 }}
-                <hr class="my-4">
+
                 <p class="lead display-4">{{ profil.description2 }}</p>
             </div>
             <div class="picture border-secondary">
@@ -23,40 +23,38 @@
                     <img src="{{ vich_uploader_asset(profil, 'pictureFile') | imagine_filter('medium') }}">
                 {% endif %}
             </div>
-
-
         </section>
 
         <section id="projet">
             <h1>Mes projets</h1>
             <div class="card-deck">
-            {%  for projet in projets %}
-            <div class="card mb-3 border-primary">
-                <h3 class="card-header">{{ projet.name }}</h3>
-                <div class="card-body">
-                    <h5 class="card-title">{{ projet.pitch }}</h5>
-                </div>
-                {% if projet.cover %}
-                    <img style="height: 300px; width: 80%; display: block;" src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('poster') }}">
-                {% else %}
-                    <img style="height: 300px; width: 80%; display: block;" src="{{ '/images/covers/empty.jpg' | imagine_filter('poster') }}">
-                {% endif %}
-                <div class="card-body ">
-                    <p class="card-text">{{ projet.description1 }}</p>
-                </div>
-                <div class="languages">
-                    {%  for language in projet.languages%}
-                        <i class="{{ language.icon }} icon-language" style="font-size: 1.8em"></i>
-                    {% endfor %}
-                </div>
-                <div class="card-footer text-muted">
-                    <a href="#" class="card-link">+ de détail de ce projet</a>
+                {%  for projet in projets %}
+                <div class="card mb-3 border-primary">
+                    <h3 class="card-header">{{ projet.name }}</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ projet.pitch }}</h5>
+                    </div>
+                    {% if projet.cover %}
+                        <img style="height: 300px; width: 80%; display: block;" src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('poster') }}">
+                    {% else %}
+                        <img style="height: 300px; width: 80%; display: block;" src="{{ '/images/covers/empty.jpg' | imagine_filter('poster') }}">
+                    {% endif %}
+                    <div class="card-body ">
+                        <p class="card-text">{{ projet.description1 }}</p>
+                    </div>
+                    <div class="languages">
+                        {%  for language in projet.languages%}
+                            <i class="{{ language.icon }} icon-language" style="font-size: 1.8em"></i>
+                        {% endfor %}
+                    </div>
+                    <div class="card-footer text-muted">
+                        <a href="#" class="card-link">+ de détail de ce projet</a>
 
+                    </div>
                 </div>
-            </div>
 
 
-            {% endfor %}
+                {% endfor %}
             </div>
 
         </section>

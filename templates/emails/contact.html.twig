@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <title>{% block title %}Contact{% endblock %}</title>
+    <style type="text/css">
+        body {
+            background:#4e5d6c;
+        }
+        h1 {
+            color: #df691a;
+        }
+        td {
+            background: #df691a;
+            font-size: 24px;
+        }
 
+    </style>
 </head>
-<body style="background:#4e5d6c">
+<body>
 
 <div>
-    <h1>Page en construction</h1>
+    <h1>Message reçu du Portfolio</h1>
 </div>
 <div>
     <table>
         <tbody>
             <tr>
-                <td>Prénom</td>
+                <td >Prénom</td>
                 <td>{{ contact.firstName }}</td>
             </tr>
             <tr>
