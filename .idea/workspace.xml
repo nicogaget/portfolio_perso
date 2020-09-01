@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,20 +28,13 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1598643045" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="captcha_v2" />
-                    <option name="lastUsedInstant" value="1598640092" />
-                  </RecentBranch>
-                  <RecentBranch>
                     <option name="branchName" value="captcha" />
-                    <option name="lastUsedInstant" value="1598638018" />
+                    <option name="lastUsedInstant" value="1598997340" />
                   </RecentBranch>
                   <RecentBranch>
+
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1598633019" />
+                    <option name="lastUsedInstant" value="1598995881" />
                   </RecentBranch>
                 </list>
               </option>
@@ -222,6 +215,9 @@
       <workItem from="1598617415129" duration="9709000" />
       <workItem from="1598632247049" duration="9871000" />
       <workItem from="1598905292186" duration="2046000" />
+
+      <workItem from="1598996448649" duration="1777000" />
+
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
@@ -373,5 +369,10 @@
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>
     <state x="3840" y="0" width="1520" height="970" key="dock-window-4/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596787134454" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1598996930061">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1598996930061" />
+    <state x="4463" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@3840.0.1920.1080" timestamp="1598996916031" />
   </component>
 </project>
