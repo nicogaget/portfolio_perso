@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="" />
+    <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,6 +167,7 @@
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/captcha-com/captcha" />
       <path value="$PROJECT_DIR$/vendor/captcha-com/symfony-captcha-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ffoqUYcagSZtnskikn67Tr3PKB" />
@@ -304,6 +310,10 @@
     </state>
     <state x="2475" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596704707580" />
     <state x="2475" y="226" width="802" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596635708138" />
+    <state x="2548" y="346" width="639" height="422" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599002276286">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2548" y="346" width="639" height="422" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599002276286" />
     <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1596734568595">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

@@ -6,9 +6,10 @@ namespace App\DataFixtures\Prod;
 
 use App\Entity\Social;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Bundle\FixturesBundle\FixtureGroupInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class socialFixtures extends Fixture
+class socialFixtures extends Fixture implements FixtureGroupInterface
 {
 
     public function load(ObjectManager $manager)
@@ -45,5 +46,9 @@ class socialFixtures extends Fixture
 
         $manager->flush();
 
+    }
+    public static function getGroups(): array
+    {
+        return ['groupProd'];
     }
 }

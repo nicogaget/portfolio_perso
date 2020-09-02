@@ -6,9 +6,10 @@ namespace App\DataFixtures\Prod;
 
 use App\Entity\Profil;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Bundle\FixturesBundle\FixtureGroupInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class ProfilFixtures extends Fixture
+class ProfilFixtures extends Fixture implements FixtureGroupInterface
 {
 
     public function load(ObjectManager $manager)
@@ -31,5 +32,10 @@ class ProfilFixtures extends Fixture
         $manager->persist($profil);
 
         $manager->flush();
+    }
+
+    public static function getGroups(): array
+    {
+        return ['groupProd'];
     }
 }

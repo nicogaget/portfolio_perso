@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -av ./ il2bf_mon_portfolio@nico-gaget.fr:~/mon-portfolio --include=public/build --include=public/.htaccess--include=vendor --exclude-from=.gitignore --exclude=".*"

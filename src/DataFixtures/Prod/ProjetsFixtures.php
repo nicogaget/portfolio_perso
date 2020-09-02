@@ -7,9 +7,10 @@ namespace App\DataFixtures\Prod;
 use App\Entity\Projet;
 use App\Service\Slugify;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Bundle\FixturesBundle\FixtureGroupInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class ProjetsFixtures extends Fixture
+class ProjetsFixtures extends Fixture implements FixtureGroupInterface
 {
 
 
@@ -53,5 +54,10 @@ Développement également de l'interface 'admin', avec un CRUD complet pour modi
 
         $manager->persist($projet);
         $manager->flush();
+    }
+
+    public static function getGroups(): array
+    {
+        return ['groupProd'];
     }
 }
