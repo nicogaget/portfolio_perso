@@ -108,6 +108,11 @@ class Profil implements \Serializable
      */
     private $email;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $aboutMe;
+
     public function __construct()
     {
         $this->socials = new ArrayCollection();
@@ -340,6 +345,18 @@ class Profil implements \Serializable
     public function setEmail(string $email): self
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    public function getAboutMe(): ?string
+    {
+        return $this->aboutMe;
+    }
+
+    public function setAboutMe(?string $aboutMe): self
+    {
+        $this->aboutMe = $aboutMe;
 
         return $this;
     }

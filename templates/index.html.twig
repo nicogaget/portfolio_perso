@@ -60,7 +60,19 @@
         </section>
 
         <section id="mon-propos">
-            <h1>A propos de moi</h1>
+{#            <h1>A mon propos</h1>#}
+{#            <div class="container-fluid" style="width: 90%">#}
+{#                {{ profil.aboutMe }}#}
+{#            </div>#}
+            <div class="jumbotron">
+                <h1 class="display-3">A mon propos</h1>
+                <p class="lead" style="font-size: 24px">{{ profil.aboutMe }}</p>
+                <hr class="my-4">
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button"> Télécharger mon CV</a>
+                </p>
+            </div>
+
         </section>
 
         <section id="contact">
@@ -68,6 +80,11 @@
                 {% include '_contactFormIndex.html.twig' %}
         </section>
     </div>
+    <footer>
+        <div class="nav-item">
+            <a class="nav-link" href="{{ path('app_login') }}">admin</a>
+        </div>
+    </footer>
 
 {% endblock %}
 {% block javascripts %}

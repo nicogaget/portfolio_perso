@@ -26,11 +26,13 @@ class ProfilType extends AbstractType
             ->add('description2')
             ->add('adress')
             ->add('phone')
+            ->add('aboutMe')
             ->add('facebook')
             ->add('linkedin')
             ->add('github')
             ->add('twitter')
             ->add('instagram')
+
         ;
     }
 

@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy" beforeDir="false" afterPath="$PROJECT_DIR$/deploy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProfilType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProfilType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +184,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -221,6 +228,7 @@
       <workItem from="1598632247049" duration="9871000" />
       <workItem from="1598905292186" duration="2046000" />
       <workItem from="1598996448649" duration="2233000" />
+      <workItem from="1599051565545" duration="13282000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
@@ -338,6 +346,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2103" y="115" width="1538" height="889" key="DiffContextDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1598627797506" />
+    <state x="2486" y="315" width="764" height="484" key="EditFileWatcherDialog" timestamp="1599075687604">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2486" y="315" width="764" height="484" key="EditFileWatcherDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599075687604" />
     <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl" timestamp="1596637371352">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -347,9 +359,10 @@
     </state>
     <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596734556037" />
     <state x="2578" y="251" width="595" height="622" key="NewPhpClassDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636706664" />
-    <state x="2676" y="181" width="400" height="761" key="RollbackChangesDialog" timestamp="1598627616665">
+    <state x="2676" y="181" width="460" height="761" key="RollbackChangesDialog" timestamp="1599077289094">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2676" y="181" width="460" height="761" key="RollbackChangesDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599077289094" />
     <state x="2676" y="181" width="400" height="761" key="RollbackChangesDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1598627616665" />
     <state x="2701" y="318" width="350" height="487" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1596636268840">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -376,10 +389,10 @@
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>
     <state x="3840" y="0" width="1520" height="970" key="dock-window-4/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596787134454" />
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1598996930061">
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599057823500">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1598996930061" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599057823500" />
     <state x="4463" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@3840.0.1920.1080" timestamp="1598996916031" />
   </component>
 </project>
