@@ -4,8 +4,10 @@
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_contactFormIndex.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_contactFormIndex.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy" beforeDir="false" afterPath="$PROJECT_DIR$/deploy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,15 +32,15 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1599092781" />
+                    <option name="lastUsedInstant" value="1599096050" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1599096012" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="css" />
                     <option name="lastUsedInstant" value="1599092691" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1599089700" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="captcha" />
@@ -230,6 +232,7 @@
       <workItem from="1598905292186" duration="2046000" />
       <workItem from="1598996448649" duration="2233000" />
       <workItem from="1599051565545" duration="13282000" />
+      <workItem from="1599117059023" duration="1298000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
