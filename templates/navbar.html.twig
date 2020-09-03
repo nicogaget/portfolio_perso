@@ -10,6 +10,7 @@
             <li class="nav-item active">
                 <a class="navbar-brand" href="/"><i class="fas fa-home" style="font-size: 1.8em"></i> <span class="sr-only">(current)</span></a>
             </li>
+            {% if not is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
                 <a class="nav-link" href="#projet">Mes projets</a>
             </li>
@@ -19,6 +20,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
+            {% endif %}
             {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
                 <a class="nav-link" href="{{ path('projet_index') }}">Projets</a>
