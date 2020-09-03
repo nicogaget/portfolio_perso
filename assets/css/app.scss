@@ -46,6 +46,13 @@ body {
         color: $trois;
         text-decoration: underline;
     }
+    .navbar-toggler {
+        border: 2px solid $deux;
+
+        .navbar-toggler-icon {
+            background-color: $deux;
+        }
+    }
 }
 
 #admin {
@@ -95,6 +102,8 @@ body {
 #presentation {
     .jumbotron {
         display: flex;
+        flex-wrap: wrap;
+        flex:10;
     }
 
     .info {
@@ -184,7 +193,10 @@ body {
 }
 
 #mon-propos {
-
+    .lead {
+        color: $deux;
+        padding: 0 5%;
+    }
 }
 
 #contact {
@@ -194,14 +206,12 @@ body {
         flex-wrap: wrap;
     }
 
-    .form-group-1,
-    .form-group-2 {
-        margin:20px;
-    }
-
-    input,
-    textarea{
-        width: 400px;
+    .form-group-1 {
+        margin: auto;
+        input,
+        textarea {
+            width: 500px;
+        }
     }
 
     .captcha {
@@ -217,6 +227,10 @@ body {
 
     .BDC_CaptchaIconsDiv {
         margin:22px 0px -7px 0px !important;
+    }
+
+    #captchaCode {
+        width: 300px;
     }
 }
 
