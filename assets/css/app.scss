@@ -208,9 +208,10 @@ body {
 
     .form-group-1 {
         margin: auto;
+
         input,
         textarea {
-            width: 500px;
+            width: 700px;
         }
     }
 
@@ -232,6 +233,23 @@ body {
     #captchaCode {
         width: 300px;
     }
+}
+
+@media screen and (max-width: 1100px) {
+    #projet {
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+        .col-md-5 {
+            max-width: inherit;
+        }
+        .col-md-7 {
+            max-width: inherit;
+        }
+
+    }
+
 }
 
 
