@@ -2,79 +2,66 @@
 
 {% block body %}
 
-
     <div class="container-fluid" id="home">
-
         {% for message in app.flashes('success') %}
             <div class="alert alert-success d-flex justify-content-center" >
                 {{ message }}
             </div>
         {% endfor %}
+        <section id="presentation">
+            <div class="jumbotron">
 
-        <div class="jumbotron">
-            <section id="presentation">
-                <div class="info">
-                    <h1 class="display-2">{{ profil.firstName }} {{ profil.lastName }}</h1>
-                    <p class="lead display-3">{{ profil.description1 }}
+                    <div class="info">
+                        <h1 class="display-2">{{ profil.firstName }} {{ profil.lastName }}</h1>
+                        <p class="lead display-3">{{ profil.description1 }}
 
-                    <p class="lead display-4">{{ profil.description2 }}</p>
-                </div>
-                <div class="picture border-secondary">
-                    {% if profil.picture %}
-                        <img src="{{ vich_uploader_asset(profil, 'pictureFile') | imagine_filter('medium') }}">
-                    {% endif %}
-                </div>
-            </section>
-        </div>
+                        <p class="lead display-4">{{ profil.description2 }}</p>
+                    </div>
+                    <div class="picture border-secondary">
+                        {% if profil.picture %}
+                            <img src="{{ vich_uploader_asset(profil, 'pictureFile') | imagine_filter('medium') }}">
+                        {% endif %}
+                    </div>
+            </div>
+        </section>
 
+        <section id="projet">
+            <div class="jumbotron">
+                <h1 class="display-4">Mes projets</h1>
+                <div class="card-deck">
+                    {%  for projet in projets %}
 
-            <section id="projet">
-                <div class="jumbotron">
-                    <h1 class="display-4">Mes projets</h1>
-                    <div class="card-deck">
-                        {%  for projet in projets %}
-                            <div class="card mb-3">
-                                <h3 class="card-header">{{ projet.name }}</h3>
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ projet.pitch }}</h5>
-                                </div>
-                                {% if projet.cover %}
-                                    <img style="height: 250px; width: 70%; display: block;" src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('poster') }}">
-                                {% else %}
-                                    <img style="height: 250px; width: 50%; display: block;" src="{{ '/images/covers/empty.jpg' | imagine_filter('poster') }}">
-                                {% endif %}
-                                <div class="card-body ">
-                                    <p class="card-text">{{ projet.description1 }}</p>
-                                </div>
-
-                                    <div class="languages">
-                                        <div class="card-language">
-                                            Technos utilisées
-                                        </div>
-                                        <div class="box-icon">{%  for language in projet.languages%}
-                                                <i class="{{ language.icon }} icon-language"></i>
-                                            {% endfor %}
-                                        </div>
-
+                        <div class="global-card">
+                            <div class="card" >
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                        {% if projet.cover %}
+                                            <img style="" src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('poster') }}">
+                                        {% else %}
+                                            <img style="height: 250px; width: 50%; display: block;" src="{{ '/images/covers/empty.jpg' | imagine_filter('poster') }}">
+                                        {% endif %}
                                     </div>
-                                <div class="card-footer text-muted">
-                                    <a href="#" class="card-link">Voir + de détails sur ce projet</a>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <h3 class="card-header">{{ projet.name }}</h3>
+                                            <div class="card-body">
+                                                <p class="card-text">{{ projet.pitch }}</p>
+                                            </div>
 
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-
-                        {% endfor %}
-                    </div>
+                            <div class="card-footer mb-3">
+                                <a href="" class="card-link">Voir + de détails sur ce projet</a>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
-            </section>
-
+            </div>
+        </section>
 
         <section id="mon-propos">
-{#            <h1>A mon propos</h1>#}
-{#            <div class="container-fluid" style="width: 90%">#}
-{#                {{ profil.aboutMe }}#}
-{#            </div>#}
             <div class="jumbotron">
                 <h1 class="display-4">A mon propos</h1>
                 <p class="lead" style="font-size: 24px">{{ profil.aboutMe }}</p>
@@ -88,7 +75,7 @@
 
         <section id="contact">
             <div class="jumbotron">
-                <h1 class="display-4"> Me contacter</h1>
+                <h1 class="display-4">Contactez moi</h1>
                 {% include '_contactFormIndex.html.twig' %}
             </div>
         </section>
