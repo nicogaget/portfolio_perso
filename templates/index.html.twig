@@ -4,13 +4,13 @@
 
 
     <div class="container-fluid" id="home">
-        <div class="page-title">
-            {% for message in app.flashes('success') %}
-                <div class="alert alert-success d-flex justify-content-center" >
-                    {{ message }}
-                </div>
-            {% endfor %}
-        </div>
+
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success d-flex justify-content-center" >
+                {{ message }}
+            </div>
+        {% endfor %}
+
         <div class="jumbotron">
             <section id="presentation">
                 <div class="info">
