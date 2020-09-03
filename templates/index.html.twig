@@ -46,11 +46,17 @@
                                 <div class="card-body ">
                                     <p class="card-text">{{ projet.description1 }}</p>
                                 </div>
-                                <div class="languages">
-                                    {%  for language in projet.languages%}
-                                        <i class="{{ language.icon }} icon-language"></i>
-                                    {% endfor %}
-                                </div>
+
+                                    <div class="languages">
+                                        <div class="card-language">
+                                            Technos utilisées
+                                        </div>
+                                        <div class="box-icon">{%  for language in projet.languages%}
+                                                <i class="{{ language.icon }} icon-language"></i>
+                                            {% endfor %}
+                                        </div>
+
+                                    </div>
                                 <div class="card-footer text-muted">
                                     <a href="#" class="card-link">Voir + de détails sur ce projet</a>
 
