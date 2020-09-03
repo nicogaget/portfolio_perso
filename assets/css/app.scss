@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #ecc19c;
+    background-color: #1e847f;
     color: white;
 }
 
@@ -15,8 +15,8 @@ body {
 .btn-std {
     border-radius: 5px;
     margin: 10px;
-    background-color: #ecc19c;
-    color: #1e847f;
+    background-color: #1e847f;
+    color: #ecc19c;
     font-size: 1.5rem;
 }
 
@@ -26,8 +26,8 @@ body {
 
 .navbar {
     font-size: 24px;
-    background-color: #1e847f;
-    border-bottom: #ecc19c solid 2px;
+    background-color: #ecc19c;
+    border-bottom: #1e847f solid 2px;
 
     ul li a {
         margin: 0 30px;
@@ -35,7 +35,7 @@ body {
 
     .nav-link,
     .navbar-brand {
-        color: #ecc19c;
+        color: #1e847f;
     }
 
     .nav-link:hover,
@@ -45,12 +45,12 @@ body {
     }
 }
 
-#fixed {
-    position: fixed;
-    width: 100%;
-    margin-top: -30px;
-    z-index: 1000;
-}
+//#fixed {
+//    position: fixed;
+//    width: 100%;
+//    z-index: 1000;
+//    margin-top: -30px;
+//}
 
 #admin {
     .container-fluid {
@@ -86,8 +86,8 @@ body {
 
     .jumbotron {
         padding: 1rem 2rem;
-        background-color: #1e847f;
-        margin-bottom: 1rem;
+        background-color: #ecc19c;
+        margin: 0.5rem 0;
         border: white solid 2px;
     }
 }
@@ -101,7 +101,7 @@ body {
     .card {
         border-radius: 5px;
         min-width: 500px;
-        background-color: #ecc19c;
+        background-color: #1e847f;
         border-color: black;
     }
 
@@ -141,7 +141,7 @@ body {
         font-size: 1.4rem;
         display: flex;
         justify-content: center;
-        color: #1e847f;
+        color: #ecc19c;
         margin-top: 10px;
     }
 
@@ -170,10 +170,6 @@ body {
     }
 }
 
-.page-title {
-    margin: 30px;
-    padding: 12px;
-}
 
 #presentation {
     display: flex;
