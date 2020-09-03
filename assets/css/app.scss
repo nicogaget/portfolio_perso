@@ -1,10 +1,12 @@
-@import "~bootswatch/dist/superhero/variables";
+@import "~bootswatch/dist/yeti/variables";
 @import "~bootstrap/scss/bootstrap";
-@import "~bootswatch/dist/superhero/bootswatch";
+@import "~bootswatch/dist/yeti/bootswatch";
 
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster Two', cursive;
+    background-color: #ecc19c;
+    color: white;
 }
 
 .alert {
@@ -13,18 +15,34 @@ body {
     border-radius: 0 0 5px 5px;
 }
 
-.btn {
+.btn-std {
     border-radius: 5px;
     margin: 10px;
+    background-color: #ecc19c;
+    color: #1e847f;
+    font-size: 1.5rem;
+}
+.btn-std:hover {
+    color: white;
 }
 
 .navbar {
     font-size: 24px;
+    background-color: #1e847f;
+    border-bottom: #ecc19c solid 2px;
 
     ul li a {
         margin: 0 30px;
     }
-
+    .nav-link,
+    .navbar-brand {
+        color: #ecc19c;
+    }
+    .nav-link:hover,
+    .navbar-brand:hover {
+        color: white;
+        text-decoration: underline;
+    }
 }
 
 #fixed {
@@ -42,7 +60,7 @@ body {
 
 #home {
     h1 {
-        margin: 40px;
+        margin: 10px 0 30px 10px;
     }
     .pres-picture {
         margin:auto;
@@ -54,6 +72,12 @@ body {
     .form-message {
         height: 200px;
     }
+    .jumbotron {
+        padding: 1rem 2rem;
+        background-color: #1e847f;
+        margin-bottom: 1rem;
+        border: white solid 2px;
+    }
 }
 #projet {
     .card-deck {
@@ -61,20 +85,67 @@ body {
         margin: auto;
     }
     .card {
-        border-radius: 20px;
+        border-radius: 5px;
         min-width: 500px;
+        background-color: #ecc19c;
+        border-color: black;
+    }
+    .card-header {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .card-body {
+        margin: auto 15px ;
+        flex: unset;
+        font-family: 'Crimson Text', serif;
+        height: 200px;
+        overflow: auto;
+    }
+
+    .card-title {
+        margin-top: 20px;
+        font-size: 1.7rem;
+        padding: 0 10px;
+        text-align: justify;
+    }
+    .card-text {
+        font-size: 1.5rem;
+        padding: 0 10px;
+        text-align: justify;
+    }
+    .card-link {
+        color: #1e847f;
+        font-size: 1.2rem;
+    }
+    .card-language {
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        color: #1e847f;
+        margin-top: 10px;
     }
     img {
         padding : 15px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .languages {
         margin: auto;
-        padding: 15px
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
     }
     .icon-language {
         margin: 15px;
+        font-size: 2.5rem;
     }
+    .box-icon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 
 }
 .page-title {
@@ -100,9 +171,11 @@ body {
         img {
             border-radius: 5px;
             border: solid white 4px;
-            box-shadow: 0px -1px 10px 14px #df691a;
+            box-shadow: 0px -1px 10px 6px #ecc19c;
         }
     }
+}
+#mon-propos {
 
 }
 

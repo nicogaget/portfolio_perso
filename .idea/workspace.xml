@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy" beforeDir="false" afterPath="$PROJECT_DIR$/deploy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ResetPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProfilType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProfilType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +30,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1599089802" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1598999885" />
+                    <option name="lastUsedInstant" value="1599089700" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="captcha" />
                     <option name="lastUsedInstant" value="1598997340" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1598995881" />
                   </RecentBranch>
                 </list>
               </option>
@@ -54,6 +49,9 @@
         </option>
       </RecentBranches>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/assets/css/app.scss" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -377,10 +375,10 @@
     </state>
     <state x="3857" y="0" width="1541" height="995" key="dock-window-1/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596735351972" />
     <state x="3840" y="0" width="924" height="815" key="dock-window-1/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1598627648657" />
-    <state x="2499" y="204" width="1922" height="1033" maximized="true" key="dock-window-2" timestamp="1596737246744">
+    <state x="2734" y="208" width="764" height="929" key="dock-window-2" timestamp="1599083857595">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2499" y="204" width="1922" height="1033" maximized="true" key="dock-window-2/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596737246744" />
+    <state x="2734" y="208" width="764" height="929" key="dock-window-2/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599083857595" />
     <state x="3840" y="0" width="1134" height="809" key="dock-window-3" timestamp="1596738580862">
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>

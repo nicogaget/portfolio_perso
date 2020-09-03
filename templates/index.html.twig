@@ -11,53 +11,64 @@
                 </div>
             {% endfor %}
         </div>
-        <section id="presentation">
-            <div class="info">
-                <h1 class="display-2">{{ profil.firstName }} {{ profil.lastName }}</h1>
-                <p class="lead display-3">{{ profil.description1 }}
+        <div class="jumbotron">
+            <section id="presentation">
+                <div class="info">
+                    <h1 class="display-2">{{ profil.firstName }} {{ profil.lastName }}</h1>
+                    <p class="lead display-3">{{ profil.description1 }}
 
-                <p class="lead display-4">{{ profil.description2 }}</p>
-            </div>
-            <div class="picture border-secondary">
-                {% if profil.picture %}
-                    <img src="{{ vich_uploader_asset(profil, 'pictureFile') | imagine_filter('medium') }}">
-                {% endif %}
-            </div>
-        </section>
-
-        <section id="projet">
-            <h1>Mes projets</h1>
-            <div class="card-deck">
-                {%  for projet in projets %}
-                <div class="card mb-3 border-primary">
-                    <h3 class="card-header">{{ projet.name }}</h3>
-                    <div class="card-body">
-                        <h5 class="card-title">{{ projet.pitch }}</h5>
-                    </div>
-                    {% if projet.cover %}
-                        <img style="height: 300px; width: 80%; display: block;" src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('poster') }}">
-                    {% else %}
-                        <img style="height: 300px; width: 80%; display: block;" src="{{ '/images/covers/empty.jpg' | imagine_filter('poster') }}">
+                    <p class="lead display-4">{{ profil.description2 }}</p>
+                </div>
+                <div class="picture border-secondary">
+                    {% if profil.picture %}
+                        <img src="{{ vich_uploader_asset(profil, 'pictureFile') | imagine_filter('medium') }}">
                     {% endif %}
-                    <div class="card-body ">
-                        <p class="card-text">{{ projet.description1 }}</p>
-                    </div>
-                    <div class="languages">
-                        {%  for language in projet.languages%}
-                            <i class="{{ language.icon }} icon-language" style="font-size: 1.8em"></i>
+                </div>
+            </section>
+        </div>
+
+
+            <section id="projet">
+                <div class="jumbotron">
+                    <h1 class="display-4">Mes projets</h1>
+                    <div class="card-deck">
+                        {%  for projet in projets %}
+                            <div class="card mb-3">
+                                <h3 class="card-header">{{ projet.name }}</h3>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ projet.pitch }}</h5>
+                                </div>
+                                {% if projet.cover %}
+                                    <img style="height: 250px; width: 70%; display: block;" src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('poster') }}">
+                                {% else %}
+                                    <img style="height: 250px; width: 50%; display: block;" src="{{ '/images/covers/empty.jpg' | imagine_filter('poster') }}">
+                                {% endif %}
+                                <div class="card-body ">
+                                    <p class="card-text">{{ projet.description1 }}</p>
+                                </div>
+
+                                    <div class="languages">
+                                        <div class="card-language">
+                                            Technos utilisées
+                                        </div>
+                                        <div class="box-icon">{%  for language in projet.languages%}
+                                                <i class="{{ language.icon }} icon-language"></i>
+                                            {% endfor %}
+                                        </div>
+
+                                    </div>
+                                <div class="card-footer text-muted">
+                                    <a href="#" class="card-link">Voir + de détails sur ce projet</a>
+
+                                </div>
+                            </div>
+
+
                         {% endfor %}
                     </div>
-                    <div class="card-footer text-muted">
-                        <a href="#" class="card-link">+ de détail de ce projet</a>
-
-                    </div>
                 </div>
+            </section>
 
-
-                {% endfor %}
-            </div>
-
-        </section>
 
         <section id="mon-propos">
 {#            <h1>A mon propos</h1>#}
@@ -65,19 +76,21 @@
 {#                {{ profil.aboutMe }}#}
 {#            </div>#}
             <div class="jumbotron">
-                <h1 class="display-3">A mon propos</h1>
+                <h1 class="display-4">A mon propos</h1>
                 <p class="lead" style="font-size: 24px">{{ profil.aboutMe }}</p>
                 <hr class="my-4">
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button"> Télécharger mon CV</a>
+                    <a class="btn btn-std btn-lg" href="#" role="button"> Télécharger mon CV</a>
                 </p>
             </div>
 
         </section>
 
         <section id="contact">
-            <h1> Me contacter</h1>
+            <div class="jumbotron">
+                <h1 class="display-4"> Me contacter</h1>
                 {% include '_contactFormIndex.html.twig' %}
+            </div>
         </section>
     </div>
     <footer>
@@ -85,6 +98,7 @@
             <a class="nav-link" href="{{ path('app_login') }}">admin</a>
         </div>
     </footer>
+
 
 {% endblock %}
 {% block javascripts %}
