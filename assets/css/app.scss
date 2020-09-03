@@ -29,7 +29,7 @@ body {
 .navbar {
     font-size: 24px;
     background-color: #1e847f;
-    border-color: #ecc19c 2px;
+    border-bottom: #ecc19c solid 2px;
 
     ul li a {
         margin: 0 30px;
@@ -60,7 +60,7 @@ body {
 
 #home {
     h1 {
-        margin: 40px;
+        margin: 10px 0 30px 10px;
     }
     .pres-picture {
         margin:auto;
@@ -75,6 +75,8 @@ body {
     .jumbotron {
         padding: 1rem 2rem;
         background-color: #1e847f;
+        margin-bottom: 1rem;
+        border: white solid 2px;
     }
 }
 #projet {
@@ -84,7 +86,7 @@ body {
     }
     .card {
         border-radius: 5px;
-        min-width: 400px;
+        min-width: 500px;
         background-color: #ecc19c;
         border-color: black;
     }
@@ -94,19 +96,34 @@ body {
         justify-content: center;
     }
     .card-body {
-        padding: 5;
+        margin: auto 15px ;
         flex: unset;
         font-family: 'Crimson Text', serif;
+        height: 200px;
+        overflow: auto;
     }
+
     .card-title {
+        margin-top: 20px;
         font-size: 1.7rem;
+        padding: 0 10px;
+        text-align: justify;
     }
     .card-text {
         font-size: 1.5rem;
+        padding: 0 10px;
+        text-align: justify;
     }
     .card-link {
         color: #1e847f;
         font-size: 1.2rem;
+    }
+    .card-language {
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        color: #1e847f;
+        margin-top: 10px;
     }
     img {
         padding : 15px;
@@ -115,14 +132,18 @@ body {
     }
     .languages {
         margin: auto;
-        padding: 15px;
+        padding: 5px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
     }
     .icon-language {
         margin: 15px;
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+    .box-icon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 
