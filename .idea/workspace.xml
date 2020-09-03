@@ -5,8 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_contactFormIndex.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_contactFormIndex.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +30,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1599089802" />
+                    <option name="lastUsedInstant" value="1599092781" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="css" />
+                    <option name="lastUsedInstant" value="1599092691" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
