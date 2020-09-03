@@ -1,85 +1,87 @@
-<div id="contactForm" class="mt-4 container-fluid" style="width: 40%">
+<div id="contactForm" class="mt-4 container-fluid" >
     {{ form_start(form) }}
+    <div class="form-group-global">
+        <div class="form-group-1">
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
 
-    <div class="control-group">
-        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-
-            {{ form_widget(form.lastName,
-                {'attr' :
-                    {
-                        'placeholder': 'Nom *',
-                        'class': 'form-control',
-                        'id': 'lastName',
-                        'type': 'text',
-                        'required' : 'required',
-                        'data-validation-required-message' : 'Veuillez entrer votre nom'
-                    }
-                }) }}
-            <p class="help-block text-danger"></p>
+                    {{ form_widget(form.lastName,
+                        {'attr' :
+                            {
+                                'placeholder': 'Nom *',
+                                'class': 'form-control',
+                                'id': 'lastName',
+                                'type': 'text',
+                                'required' : 'required',
+                                'data-validation-required-message' : 'Veuillez entrer votre nom'
+                            }
+                        }) }}
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                {{ form_widget(form.firstName,
+                    {'attr' :
+                        {
+                            'placeholder': 'Prénom *',
+                            'class': 'form-control',
+                            'id': 'firstName',
+                            'type': 'text',
+                            'required' : 'required',
+                            'data-validation-required-message' : 'Veuillez entrer votre prénom'
+                        }
+                    }) }}
+                <p class="help-block text-danger"></p>
+            </div>
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    {{ form_widget(form.email,
+                        {'attr' :
+                            {
+                                'placeholder': 'Email *',
+                                'class': 'form-control',
+                                'id': 'Email',
+                                'type': 'text',
+                                'required' : 'required',
+                                'data-validation-required-message' : 'Veuillez entrer votre email'
+                            }
+                        }) }}
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+        </div>
+        <div class="form-group-2">
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    {#                        <label>{{ form_label(form.lastName) }}</label>#}
+                    {{ form_widget(form.message,
+                        {'attr' :
+                            {
+                                'placeholder': 'Votre message ...',
+                                'class': 'form-control form-message',
+                                'id': 'message',
+                                'type': 'text',
+                                'required' : 'required',
+                                'data-validation-required-message' : 'Veuillez saisir un message'
+                            }
+                        }) }}
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="form-group floating-label-form-group controls mb-0 pb-2">
-        {{ form_widget(form.firstName,
-            {'attr' :
-                {
-                    'placeholder': 'Prénom *',
-                    'class': 'form-control',
-                    'id': 'firstName',
-                    'type': 'text',
-                    'required' : 'required',
-                    'data-validation-required-message' : 'Veuillez entrer votre prénom'
-                }
-            }) }}
-        <p class="help-block text-danger"></p>
-    </div>
-    <div class="control-group">
-        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-            {{ form_widget(form.email,
-                {'attr' :
-                    {
-                        'placeholder': 'Email *',
-                        'class': 'form-control',
-                        'id': 'Email',
-                        'type': 'text',
-                        'required' : 'required',
-                        'data-validation-required-message' : 'Veuillez entrer votre email'
-                    }
-                }) }}
-            <p class="help-block text-danger"></p>
-        </div>
-    </div>
-    <div class="control-group">
-        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-            {#                        <label>{{ form_label(form.lastName) }}</label>#}
-            {{ form_widget(form.message,
-                {'attr' :
-                    {
-                        'placeholder': 'Votre message ...',
-                        'class': 'form-control form-message',
-                        'id': 'message',
-                        'type': 'text',
-                        'required' : 'required',
-                        'data-validation-required-message' : 'Veuillez saisir un message'
-                    }
-                }) }}
-            <p class="help-block text-danger"></p>
-        </div>
-    </div>
-
-       <div class="form-group">
-
-
-
+       <div class="form-group captcha">
            {{ form_widget(form.captchaCode, {
                'attr' : {
                    'class' : 'form-control',
-                   'placeholder': 'Saisir le code ci-dessus',
-                   'style' : 'margin:10px'
+                   'placeholder': 'Saisir le code',
+                   'style' : 'margin:10px',
+                   'style' : 'font-family:arial'
                }}) }}
        </div>
 
 
-    <div class="form-group">
+    <div class="form-group lead">
         <button class="btn btn-std btn-lg" >Envoyer</button>
     </div>
     {{ form_end(form) }}
