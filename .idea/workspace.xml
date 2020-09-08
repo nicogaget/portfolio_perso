@@ -4,8 +4,16 @@
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/templates/projet/on_construct.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/language/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/language/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/language/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/language/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/language/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/language/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +37,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="pageProjet" />
+                    <option name="lastUsedInstant" value="1599572963" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="master" />
                     <option name="lastUsedInstant" value="1599096050" />
                   </RecentBranch>
@@ -39,10 +51,6 @@
                   <RecentBranch>
                     <option name="branchName" value="css" />
                     <option name="lastUsedInstant" value="1599092691" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="captcha" />
-                    <option name="lastUsedInstant" value="1598997340" />
                   </RecentBranch>
                 </list>
               </option>
@@ -248,7 +256,7 @@
       <workItem from="1598996448649" duration="2233000" />
       <workItem from="1599051565545" duration="13282000" />
       <workItem from="1599117059023" duration="1298000" />
-      <workItem from="1599567923193" duration="1046000" />
+      <workItem from="1599567923193" duration="8243000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>

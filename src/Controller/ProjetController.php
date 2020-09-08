@@ -75,7 +75,7 @@ class ProjetController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="projet_edit", methods={"GET","POST"})
+     * @Route("/{slug}/edit", name="projet_edit", methods={"GET","POST"})
      * @param Request $request
      * @param Projet $projet
      * @return Response
@@ -96,6 +96,7 @@ class ProjetController extends AbstractController
         return $this->render('projet/edit.html.twig', [
             'projet' => $projet,
             'form' => $form->createView(),
+
         ]);
     }
 
