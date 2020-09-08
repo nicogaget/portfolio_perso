@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New ScreenShot{% endblock %}
+
+{% block body %}
+    <h1>Create new ScreenShot</h1>
+
+    {{ include('screen_shot/_form.html.twig') }}
+
+    <a href="{{ path('screen_shot_index') }}">back to list</a>
+{% endblock %}

@@ -22,13 +22,12 @@ final class Version20200908210228 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql('CREATE TABLE screen_shot (id INT AUTO_INCREMENT NOT NULL, projet_id INT NOT NULL, name VARCHAR(255) NOT NULL, comment LONGTEXT NOT NULL, INDEX IDX_ABB97D34C18272 (projet_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
         $this->addSql('ALTER TABLE screen_shot ADD CONSTRAINT FK_ABB97D34C18272 FOREIGN KEY (projet_id) REFERENCES projet (id)');
-        $this->addSql('ALTER TABLE profil DROP cv_file_name');
+
     }
 
     public function down(Schema $schema) : void
     {
         // this down() migration is auto-generated, please modify it to your needs
         $this->addSql('DROP TABLE screen_shot');
-        $this->addSql('ALTER TABLE profil ADD cv_file_name VARCHAR(255) CHARACTER SET utf8mb4 DEFAULT NULL COLLATE `utf8mb4_unicode_ci`');
     }
 }

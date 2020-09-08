@@ -30,6 +30,7 @@ class ProjetsFixtures extends Fixture implements FixtureGroupInterface
         $projet->addLanguage($this->getReference("html"));
         $projet->addLanguage($this->getReference("github"));
         $projet->setUpdatedAt(new \DateTime('now'));
+        $this->addReference('tnt', $projet);
         $projet->setSlug($slug->generate($projet->getName()));
         $manager->persist($projet);
 
@@ -50,6 +51,7 @@ Développement également de l'interface 'admin', avec un CRUD complet pour modi
         $projet->addLanguage($this->getReference("html"));
         $projet->addLanguage($this->getReference("github"));
         $projet->setUpdatedAt(new \DateTime('now'));
+        $this->addReference('rs', $projet);
         $projet->setSlug($slug->generate($projet->getName()));
 
         $manager->persist($projet);

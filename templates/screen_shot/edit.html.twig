@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit ScreenShot{% endblock %}
+
+{% block body %}
+    <h1>Edit ScreenShot</h1>
+
+    {{ include('screen_shot/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('screen_shot_index') }}">back to list</a>
+
+    {{ include('screen_shot/_delete_form.html.twig') }}
+{% endblock %}
