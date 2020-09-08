@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/projet/on_construct.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy" beforeDir="false" afterPath="$PROJECT_DIR$/deploy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +206,23 @@
       <recent name="$PROJECT_DIR$/assets/images" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.watch" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -233,6 +248,7 @@
       <workItem from="1598996448649" duration="2233000" />
       <workItem from="1599051565545" duration="13282000" />
       <workItem from="1599117059023" duration="1298000" />
+      <workItem from="1599567923193" duration="1046000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
@@ -358,6 +374,22 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596637371352" />
+    <state width="1848" height="227" key="GridCell.Tab.0.bottom" timestamp="1599568640470">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599568640470" />
+    <state width="1848" height="227" key="GridCell.Tab.0.center" timestamp="1599568640470">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="227" key="GridCell.Tab.0.center/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599568640470" />
+    <state width="1848" height="227" key="GridCell.Tab.0.left" timestamp="1599568640470">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="227" key="GridCell.Tab.0.left/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599568640470" />
+    <state width="1848" height="227" key="GridCell.Tab.0.right" timestamp="1599568640470">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="227" key="GridCell.Tab.0.right/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599568640470" />
     <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog" timestamp="1596734556037">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
