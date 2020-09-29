@@ -261,6 +261,24 @@ body {
 }
 
 /** page projet **/
+#project-page {
+    margin: 10px;
+    padding: 20px;
+    background-color: $un;
+    color: $deux;
+    font-size: 1.5rem;
+
+    .jumbotron {
+        background-color: $deux;
+        color: $un;
+        display: flex;
+        flex-wrap: wrap;
+
+        .screenshot {
+            margin: auto;
+        }
+    }
+}
 
 
 
