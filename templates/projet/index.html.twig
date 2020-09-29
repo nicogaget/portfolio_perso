@@ -13,21 +13,17 @@
                 <tr class="table-primary">
                     <th>Nom</th>
                     <th>Pitch</th>
-                    <th>Logo</th>
                     <th>Couverture</th>
-                    <th>Description 1</th>
-                    <th>Description 2</th>
                     <th>Lien</th>
                     <th>Langages</th>
                     <th>actions</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody class="table-line">
                 {% for projet in projets %}
                     <tr>
                         <td>{{ projet.name }}</td>
                         <td>{{ projet.pitch }}</td>
-                        <td>{{ projet.logo }}</td>
                         <td>
                             {% if projet.cover %}
                             <img src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('mini') }}">
@@ -35,28 +31,26 @@
                                 <img src="{{ '/images/covers/empty.jpg' | imagine_filter('mini') }}">
                             {% endif %}
                         </td>
-                        <td>{{ projet.description1 }}</td>
-                        <td>{{ projet.description2 }}</td>
-                        <td>{{ projet.link }}</td>
+                        <td style="font-size: 1rem">{{ projet.link }}</td>
                         <td>
                             {% for language in projet.languages %}
                                 <i class="{{ language.icon }}" style="font-size: 1.8em"></i>
                             {% endfor %}
                         </td>
                         <td>
-                            <a href="{{ path('projet_show', {'id': projet.id}) }}"><i class="fas fa-search"></i> Apercu</a>
-                            <a href="{{ path('projet_edit', {'id': projet.id}) }}"><i class="fas fa-edit"></i> Edition</a>
+                            <a href="{{ path('projet_show', {'slug': projet.slug}) }}"><i class="fas fa-search"></i> Apercu</a>
+                            <a href="{{ path('projet_edit', {'slug': projet.slug}) }}"><i class="fas fa-edit"></i> Edition</a>
                         </td>
                     </tr>
                 {% else %}
                     <tr>
-                        <td colspan="9">no records found</td>
+                        <td colspan="9">Aucun projet trouvé</td>
                     </tr>
                 {% endfor %}
                 </tbody>
             </table>
 
-            <a class="btn btn-primary" href="{{ path('projet_new') }}">Create new</a>
+            <a class="btn btn-primary" href="{{ path('projet_new') }}">Ajouter un projet</a>
         </div>
     </div>
 {% endblock %}

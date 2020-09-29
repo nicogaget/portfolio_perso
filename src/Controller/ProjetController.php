@@ -68,14 +68,14 @@ class ProjetController extends AbstractController
      */
     public function show(Projet $projet, Slugify $slugify): Response
     {
-        return $this->render('projet/on_construct.html.twig', [
+        return $this->render('projet/show.html.twig', [
             'projet' => $projet,
             'slug' => $slugify
         ]);
     }
 
     /**
-     * @Route("/{id}/edit", name="projet_edit", methods={"GET","POST"})
+     * @Route("/{slug}/edit", name="projet_edit", methods={"GET","POST"})
      * @param Request $request
      * @param Projet $projet
      * @return Response
@@ -96,6 +96,7 @@ class ProjetController extends AbstractController
         return $this->render('projet/edit.html.twig', [
             'projet' => $projet,
             'form' => $form->createView(),
+
         ]);
     }
 

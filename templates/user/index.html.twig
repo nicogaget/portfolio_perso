@@ -9,7 +9,7 @@
         </div>
     <div class="container-fluid">
     <table class="table table-hover">
-        <tbody>
+        <tbody class="table-user" >
             <tr >
                 <th class="table-primary">Email</th>
                 <td>{{ user.email }}</td>
@@ -73,10 +73,12 @@
         </tbody>
     </table>
 
+    <div class="back-delete-btn">
+        <a class="btn btn-primary" href="{{ path('user_edit', {'id': user.id}) }}">Modifier</a>
 
-    <a class="btn btn-primary" href="{{ path('user_edit', {'id': user.id}) }}">Modifier</a>
+        {{ include('user/_delete_form.html.twig') }}
+    </div>
 
-    {{ include('user/_delete_form.html.twig') }}
         </div>
     </div>
 {% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ScreenShot index{% endblock %}
+
+{% block body %}
+    <h1>ScreenShot index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Comment</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for screen_shot in screen_shots %}
+            <tr>
+                <td>{{ screen_shot.id }}</td>
+                <td>{{ screen_shot.name }}</td>
+                <td>{{ screen_shot.comment }}</td>
+                <td>
+                    <a href="{{ path('screen_shot_show', {'id': screen_shot.id}) }}">show</a>
+                    <a href="{{ path('screen_shot_edit', {'id': screen_shot.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('screen_shot_new') }}">Create new</a>
+{% endblock %}
