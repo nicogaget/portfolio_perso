@@ -4,11 +4,8 @@
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/assets/css/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/vars.scss" afterDir="false" />
-=======
->>>>>>> 58219b7dedcbc83e2e26fde5c880ae7d9b607042
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/Prod/ScreenShotFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/Prod/ScreenShotFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/projet/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/show.html.twig" afterDir="false" />
@@ -35,12 +32,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="pageProjet" />
-                    <option name="lastUsedInstant" value="1599572963" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1601404765" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1599096050" />
+                    <option name="branchName" value="pageProjet" />
+                    <option name="lastUsedInstant" value="1599572963" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
@@ -260,10 +257,7 @@
       <workItem from="1600951927147" duration="221000" />
       <workItem from="1601047136936" duration="679000" />
       <workItem from="1601328639447" duration="41000" />
-<<<<<<< HEAD
-      <workItem from="1601404420920" duration="344000" />
-=======
->>>>>>> 58219b7dedcbc83e2e26fde5c880ae7d9b607042
+      <workItem from="1601404420920" duration="1772000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>

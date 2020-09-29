@@ -1,6 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
-@import "vars";
-
+$un : white;
+$deux : #1e3d59;
+$trois : #ff6e40;
+$quatre : #ffc13b;
 body {
     font-family: 'Raleway', sans-serif;
     background-color: $deux;
