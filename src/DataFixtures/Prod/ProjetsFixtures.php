@@ -30,6 +30,7 @@ class ProjetsFixtures extends Fixture implements FixtureGroupInterface
         $projet->addLanguage($this->getReference("html"));
         $projet->addLanguage($this->getReference("github"));
         $projet->setUpdatedAt(new \DateTime('now'));
+        $this->addReference('tnt', $projet);
         $projet->setSlug($slug->generate($projet->getName()));
         $manager->persist($projet);
 
@@ -37,8 +38,8 @@ class ProjetsFixtures extends Fixture implements FixtureGroupInterface
         $projet = new Projet();
 
         $projet->setName("Rocket School");
-        $projet->setPitch("MOOC avec une vidéo d'information sur les formations proposées par la Rocker School ainsi qu'un quizz en lien avec la vidéo.");
-        $projet->setDescription1("Outil destiné aux candidats de l'école Rocket School qui propose desformations en Business Development et Webmarketing. Cet outil leut permet de s'informer sur les différents métiers accessibles après une formation.");
+        $projet->setPitch("Outil destiné aux candidats de l'école Rocket School qui propose desformations en Business Development et Webmarketing. Cet outil leut permet de s'informer sur les différents métiers accessibles après une formation.");
+        $projet->setDescription1("MOOC avec une vidéo d'information sur les formations proposées par la Rocker School ainsi qu'un quizz en lien avec la vidéo.");
         $projet->setDescription2("Développement d'une interface 'candidat' pour un acces simple à la vidéo, au quizz, à une FAQ, à son profil candidat ainsi qu'a un guide destiné à la suite de son parcours candidat.
 Développement également de l'interface 'admin', avec un CRUD complet pour modifier et mettre à jour la totalité du contenu proposé.");
         $projet->addLanguage($this->getReference("linux"));
@@ -50,6 +51,7 @@ Développement également de l'interface 'admin', avec un CRUD complet pour modi
         $projet->addLanguage($this->getReference("html"));
         $projet->addLanguage($this->getReference("github"));
         $projet->setUpdatedAt(new \DateTime('now'));
+        $this->addReference('rs', $projet);
         $projet->setSlug($slug->generate($projet->getName()));
 
         $manager->persist($projet);

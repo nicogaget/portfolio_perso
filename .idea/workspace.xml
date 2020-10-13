@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/vars.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/Prod/ProjetsFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/Prod/ProjetsFixtures.php" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1599096050" />
+                    <option name="lastUsedInstant" value="1601404765" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="pageProjet" />
+                    <option name="lastUsedInstant" value="1599572963" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
@@ -38,10 +43,6 @@
                   <RecentBranch>
                     <option name="branchName" value="css" />
                     <option name="lastUsedInstant" value="1599092691" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="captcha" />
-                    <option name="lastUsedInstant" value="1598997340" />
                   </RecentBranch>
                 </list>
               </option>
@@ -185,25 +186,42 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/screenShot" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/screenShot" />
+      <recent name="$PROJECT_DIR$/public/images/covers/fixtures" />
+      <recent name="$PROJECT_DIR$/src/Service" />
+      <recent name="$PROJECT_DIR$/public/images/covers" />
+      <recent name="$PROJECT_DIR$/public/build/images/icons" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/config/packages" />
       <recent name="$PROJECT_DIR$/public/build" />
       <recent name="$PROJECT_DIR$/assets" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images/covers/fixtures" />
-      <recent name="$PROJECT_DIR$/src/Service" />
-      <recent name="$PROJECT_DIR$/public/images/covers" />
-      <recent name="$PROJECT_DIR$/public/build/images/icons" />
-      <recent name="$PROJECT_DIR$/assets/images" />
-    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.watch" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -230,6 +248,13 @@
       <workItem from="1598996448649" duration="2233000" />
       <workItem from="1599051565545" duration="13282000" />
       <workItem from="1599117059023" duration="1298000" />
+      <workItem from="1599567923193" duration="19897000" />
+      <workItem from="1599683441942" duration="20000" />
+      <workItem from="1600702651291" duration="593000" />
+      <workItem from="1600951927147" duration="221000" />
+      <workItem from="1601047136936" duration="679000" />
+      <workItem from="1601328639447" duration="41000" />
+      <workItem from="1601404420920" duration="1772000" />
     </task>
     <task id="LOCAL-00001" summary="mise en place du login remeber me">
       <created>1596662099338</created>
@@ -323,10 +348,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2548" y="346" width="639" height="422" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599002276286" />
-    <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1596734568595">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="4577" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1599599914071">
+      <screen x="3840" y="0" width="1920" height="1080" />
     </state>
     <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596734568595" />
+    <state x="4577" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@3840.0.1920.1080" timestamp="1599599914071" />
     <state x="2657" y="230" width="437" height="664" key="#com.intellij.ide.util.MemberChooser/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636724444" />
     <state x="2475" y="249" width="802" height="625" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598905298625">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -355,10 +381,27 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2663" y="322" width="426" height="479" key="FileChooserDialogImpl/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596637371352" />
-    <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog" timestamp="1596734556037">
+    <state width="1848" height="227" key="GridCell.Tab.0.bottom" timestamp="1599568640470">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1848" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599568640470" />
+    <state width="1848" height="227" key="GridCell.Tab.0.center" timestamp="1599568640470">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="227" key="GridCell.Tab.0.center/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599568640470" />
+    <state width="1848" height="227" key="GridCell.Tab.0.left" timestamp="1599568640470">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="227" key="GridCell.Tab.0.left/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599568640470" />
+    <state width="1848" height="227" key="GridCell.Tab.0.right" timestamp="1599568640470">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1848" height="227" key="GridCell.Tab.0.right/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599568640470" />
+    <state x="4498" y="251" width="694" height="622" key="NewPhpClassDialog" timestamp="1599599894349">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
     <state x="2578" y="251" width="658" height="622" key="NewPhpClassDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596734556037" />
+    <state x="4498" y="251" width="694" height="622" key="NewPhpClassDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@3840.0.1920.1080" timestamp="1599599894349" />
     <state x="2578" y="251" width="595" height="622" key="NewPhpClassDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1596636706664" />
     <state x="2676" y="181" width="460" height="761" key="RollbackChangesDialog" timestamp="1599077289094">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -390,10 +433,10 @@
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>
     <state x="3840" y="0" width="1520" height="970" key="dock-window-4/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596787134454" />
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599057823500">
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599601094428">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599057823500" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599601094428" />
     <state x="4463" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@3840.0.1920.1080" timestamp="1598996916031" />
   </component>
 </project>

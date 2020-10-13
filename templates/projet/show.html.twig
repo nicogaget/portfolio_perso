@@ -3,50 +3,35 @@
 {% block title %}Projet{% endblock %}
 
 {% block body %}
-    <h1>Projet</h1>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Name</th>
-                <td>{{ projet.name }}</td>
-            </tr>
-            <tr>
-                <th>Pitch</th>
-                <td>{{ projet.pitch }}</td>
-            </tr>
-            <tr>
-                <th>Logo</th>
-                <td>{{ projet.logo }}</td>
-            </tr>
-            <tr>
-                <th>Cover</th>
-                <td>
-                    {% if projet.cover %}
-                        <img src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('medium') }}">
-                    {% else %}
-                        <img src="{{ '/images/covers/empty.jpg' | imagine_filter('medium') }}">
-                    {% endif %}
-                </td>
-            </tr>
-            <tr>
-                <th>Description1</th>
-                <td>{{ projet.description1 }}</td>
-            </tr>
-            <tr>
-                <th>Description2</th>
-                <td>{{ projet.description2 }}</td>
-            </tr>
-            <tr>
-                <th>Link</th>
-                <td>{{ projet.link }}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="project-page">
+        <h1 class="d-flex justify-content-center mt-5 display-4 ">{{ projet.name }}</h1>
+        <div class="projet-title"> </div>
+        <div class="p-5">
+            <div>{{ projet.pitch }}</div>
+            <div>{{ projet.description1 }}</div>
+            <div>{{ projet.description2 }}</div>
+        </div>
+        <div class="jumbotron">
+                {% for screenShot in projet.screenShots %}
+                    <div class="screenshot">
+                        <img src="/images/screenShot/{{ screenShot.name }}" alt="photo de {{ screenShot.name }}"
+                             style="width: 400px; height: 400px">
+                        <div class="" style="width: 400px">
+                            {{ screenShot.comment }}
+                        </div>
 
-    <a class="btn btn-info" href="{{ path('projet_index') }}"><i class="fas fa-backward"></i> Retour à la liste</a>
+                    </div>
+                {% endfor %}
+        </div>
+        <a class="btn btn-info" href="{{ path('projet_index') }}"><i class="fas fa-backward"></i> Retour à la liste des projets</a>
 
-    <a class="btn btn-primary" href="{{ path('projet_edit', {'id': projet.id}) }}"><i class="fas fa-edit"></i> Modifier ce projet</a>
+
+
+    {% if is_granted('ROLE_ADMIN') %}
+    <a class="btn btn-primary" href="{{ path('projet_edit', {'slug': projet.slug}) }}"><i class="fas fa-edit"></i> Modifier ce projet</a>
 
     {{ include('projet/_delete_form.html.twig') }}
+    {% endif %}
+    </div>
 {% endblock %}

@@ -78,9 +78,15 @@ class Projet
      */
     private $slug;
 
+    /**
+     * @ORM\OneToMany(targetEntity=ScreenShot::class, mappedBy="projet")
+     */
+    private $screenShots;
+
     public function __construct()
     {
         $this->languages = new ArrayCollection();
+        $this->screenShots = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -234,6 +240,37 @@ class Projet
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|ScreenShot[]
+     */
+    public function getScreenShots(): Collection
+    {
+        return $this->screenShots;
+    }
+
+    public function addScreenShot(ScreenShot $screenShot): self
+    {
+        if (!$this->screenShots->contains($screenShot)) {
+            $this->screenShots[] = $screenShot;
+            $screenShot->setProjet($this);
+        }
+
+        return $this;
+    }
+
+    public function removeScreenShot(ScreenShot $screenShot): self
+    {
+        if ($this->screenShots->contains($screenShot)) {
+            $this->screenShots->removeElement($screenShot);
+            // set the owning side to null (unless already changed)
+            if ($screenShot->getProjet() === $this) {
+                $screenShot->setProjet(null);
+            }
+        }
 
         return $this;
     }

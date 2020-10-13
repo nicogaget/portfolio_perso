@@ -3,11 +3,11 @@ Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
         on line 1 of app.scss
 
 1: @import "~bootstrap/scss/bootstrap";
-2: @import "vars";
-3: 
-4: body {
-5:     font-family: 'Raleway', sans-serif;
-6:     background-color: $deux;
+2: $un : white;
+3: $deux : #1e3d59;
+4: $trois : #ff6e40;
+5: $quatre : #ffc13b;
+6: body {
 
 Backtrace:
 app.scss:1
@@ -46,4 +46,4 @@ app.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.\A         on line 1 of app.scss\A \A 1: @import \"~bootstrap/scss/bootstrap\";\A 2: @import \"vars\";\A 3: \A 4: body {\A 5:     font-family: 'Raleway', sans-serif;\A 6:     background-color: $deux;"; }
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.\A         on line 1 of app.scss\A \A 1: @import \"~bootstrap/scss/bootstrap\";\A 2: $un : white;\A 3: $deux : #1e3d59;\A 4: $trois : #ff6e40;\A 5: $quatre : #ffc13b;\A 6: body {"; }

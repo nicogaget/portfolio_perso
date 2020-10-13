@@ -13,7 +13,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @IsGranted("ROLE_ADMIN")
  * @Route("/projet")
  */
 class ProjetController extends AbstractController
@@ -22,6 +21,7 @@ class ProjetController extends AbstractController
      * @Route("/", name="projet_index", methods={"GET"})
      * @param ProjetRepository $projetRepository
      * @return Response
+     * @IsGranted("ROLE_ADMIN")
      */
     public function index(ProjetRepository $projetRepository): Response
     {
@@ -35,6 +35,7 @@ class ProjetController extends AbstractController
      * @param Request $request
      * @param Slugify $slugify
      * @return Response
+     * @IsGranted("ROLE_ADMIN")
      */
     public function new(Request $request,Slugify $slugify): Response
     {
@@ -74,10 +75,11 @@ class ProjetController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="projet_edit", methods={"GET","POST"})
+     * @Route("/{slug}/edit", name="projet_edit", methods={"GET","POST"})
      * @param Request $request
      * @param Projet $projet
      * @return Response
+     * @IsGranted("ROLE_ADMIN")
      */
     public function edit(Request $request, Projet $projet): Response
     {
@@ -94,6 +96,7 @@ class ProjetController extends AbstractController
         return $this->render('projet/edit.html.twig', [
             'projet' => $projet,
             'form' => $form->createView(),
+
         ]);
     }
 
@@ -102,6 +105,7 @@ class ProjetController extends AbstractController
      * @param Request $request
      * @param Projet $projet
      * @return Response
+     * @IsGranted("ROLE_ADMIN")
      */
     public function delete(Request $request, Projet $projet): Response
     {

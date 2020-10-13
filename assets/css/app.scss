@@ -1,6 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
-@import "vars";
-
+$un : white;
+$deux : #1e3d59;
+$trois : #ff6e40;
+$quatre : #ffc13b;
 body {
     font-family: 'Raleway', sans-serif;
     background-color: $deux;
@@ -56,10 +58,35 @@ body {
 }
 
 #admin {
+    font-size: 1.5rem;
+
     .container-fluid {
         width: 85%;
     }
+    .table-line tr,
+    .table-user td {
+        background-color: $un;
+    }
+    .table th {
+        width: 20%;
+    }
+
+    #projet img {
+        width: 20%;
+    }
+    .record-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .back-delete-btn {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+
+    }
+
 }
+
 
 #home {
     h1 {
@@ -208,9 +235,10 @@ body {
 
     .form-group-1 {
         margin: auto;
+
         input,
         textarea {
-            width: 500px;
+            width: 700px;
         }
     }
 
@@ -232,6 +260,45 @@ body {
     #captchaCode {
         width: 300px;
     }
+}
+
+/** page projet **/
+#project-page {
+    margin: 10px;
+    padding: 20px;
+    background-color: $un;
+    color: $deux;
+    font-size: 1.5rem;
+
+    .jumbotron {
+        background-color: $deux;
+        color: $un;
+        display: flex;
+        flex-wrap: wrap;
+
+        .screenshot {
+            margin: auto;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    #projet {
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+        .col-md-5 {
+            max-width: inherit;
+        }
+        .col-md-7 {
+            max-width: inherit;
+        }
+
+    }
+
 }
 
 
