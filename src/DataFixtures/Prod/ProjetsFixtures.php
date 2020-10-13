@@ -22,7 +22,7 @@ class ProjetsFixtures extends Fixture implements FixtureGroupInterface
         $projet->setName("T'N'T Troc and Troc");
         $projet->setDescription1("“Des échanges sans argent pour des liens plus humains”");
         $projet->setPitch("Offrir une plateforme de troc entre particuliers, sans enjeu monétaire, dans un esprit de bienveillance.");
-        $projet->setDescription2("Site fictif développer dans le cadre de la formation Wild Code School en équipe de 4 personnes sur 4 semaines. Utilisation des méthodes Agiles et SCRUM");
+        $projet->setDescription2("Site fictif développé dans le cadre de la formation Wild Code School en équipe de 4 personnes sur 4 semaines. Utilisation des méthodes Agiles et SCRUM");
         $projet->addLanguage($this->getReference("linux"));
         $projet->addLanguage($this->getReference("php"));
         $projet->addLanguage($this->getReference("js"));
