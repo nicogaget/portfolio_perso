@@ -68,7 +68,7 @@ class ProjetController extends AbstractController
      */
     public function show(Projet $projet, Slugify $slugify): Response
     {
-        return $this->render('projet/show.html.twig', [
+        return $this->render('projet/on_construct.html.twig', [
             'projet' => $projet,
             'slug' => $slugify
         ]);

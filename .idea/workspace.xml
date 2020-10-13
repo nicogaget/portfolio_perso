@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="864aa208-d765-4b0d-b99f-fdcda3445fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/Prod/ProjetsFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/Prod/ProjetsFixtures.php" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/.sass-cache/820f5d713c1b2373f7aa39f4f9833d88e4f6d2a2/app.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy" beforeDir="false" afterPath="$PROJECT_DIR$/deploy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pdf/CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/pdf/CV.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,24 +189,24 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/screenShot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/pdf" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images/screenShot" />
-      <recent name="$PROJECT_DIR$/public/images/covers/fixtures" />
-      <recent name="$PROJECT_DIR$/src/Service" />
-      <recent name="$PROJECT_DIR$/public/images/covers" />
-      <recent name="$PROJECT_DIR$/public/build/images/icons" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/config/packages" />
       <recent name="$PROJECT_DIR$/public/build" />
       <recent name="$PROJECT_DIR$/assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/pdf" />
+      <recent name="$PROJECT_DIR$/public/images/screenShot" />
+      <recent name="$PROJECT_DIR$/public/images/covers/fixtures" />
+      <recent name="$PROJECT_DIR$/src/Service" />
+      <recent name="$PROJECT_DIR$/public/images/covers" />
     </key>
   </component>
   <component name="RunManager">
@@ -408,6 +411,10 @@
     </state>
     <state x="2676" y="181" width="460" height="761" key="RollbackChangesDialog/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599077289094" />
     <state x="2676" y="181" width="400" height="761" key="RollbackChangesDialog/3840.0.1920.1080/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1598627616665" />
+    <state x="4142" y="88" key="SettingsEditor" timestamp="1602629608228">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state x="4142" y="88" key="SettingsEditor/0.0.1920.1080/3840.0.1920.1080/1920.0.1920.1080@3840.0.1920.1080" timestamp="1602629608228" />
     <state x="2701" y="318" width="350" height="487" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1596636268840">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

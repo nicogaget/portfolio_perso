@@ -172,7 +172,6 @@ body {
         flex-direction: column;
         margin: auto;
         min-width: 500px;
-
     }
     .card {
         border-radius: 5px;
@@ -186,6 +185,9 @@ body {
 
     .col-md-5 {
         margin: auto;
+    }
+    .cover {
+        padding: 5px 10px;
     }
     img {
         width: 100%;
@@ -224,6 +226,21 @@ body {
         color: $deux;
         padding: 0 5%;
     }
+
+    .mon-propos {
+        margin: 0 10%;
+        text-align: justify;
+    }
+
+    p {
+        color: $deux;
+        font-size: 1.5rem;
+    }
+    span {
+        color: $trois;
+        font-weight: bold;
+    }
+
 }
 
 #contact {

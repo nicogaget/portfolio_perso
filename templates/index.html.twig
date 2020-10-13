@@ -36,9 +36,14 @@
                                 <div class="row no-gutters">
                                     <div class="col-md-5">
                                         {% if projet.cover %}
-                                            <img style="" src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('poster') }}">
+                                            <div class="cover">
+                                                <img style="" src="{{ vich_uploader_asset(projet, 'coverFile') | imagine_filter('poster') }}">
+                                            </div>
+
                                         {% else %}
-                                            <img style="height: 250px; width: 50%; display: block;" src="{{ '/images/covers/empty.jpg' | imagine_filter('poster') }}">
+                                            <div class="cover">
+                                                <img style="height: 250px; width: 50%; display: block;" src="{{ '/images/covers/empty.jpg' | imagine_filter('poster') }}">
+                                            </div>
                                         {% endif %}
                                     </div>
                                     <div class="col-md-7">
@@ -58,13 +63,39 @@
                         </div>
                     {% endfor %}
                 </div>
+                <div class="d-flex justify-content-center"><h2>D'autres projets seront bientôt mis en ligne</h2></div>
+
             </div>
         </section>
 
         <section id="mon-propos">
             <div class="jumbotron">
                 <h1 class="display-4">A mon propos</h1>
-                <p class="lead" style="font-size: 24px">{{ profil.aboutMe }}</p>
+                <div class="mon-propos">
+                    <p class="lead" style="font-size: 24px">{{ profil.aboutMe }}</p>
+                    <p>Suite à une formation de développeur web à la <span>Wild Code School </span>de lyon, je recherche une
+                        entreprise pour un contrat de professionnalisation en alternance. Mon objectif étant de pouvoir
+                        obtenir le diplôme de Concepteur Développeur d’Application Web et Mobile fin 2021.</p>
+                    <p>Durant <span>5 mois de formation intensive en PHP 7 et Symfony</span>, j’ai pu acquérir les compétences et
+                        qualités d’un développeur web en étant initié aux différentes étapes que comporte un projet, de sa
+                        préparation ( réunion client, production du backlog, planning poker, sprint etc.) à son
+                        développement (code, debug, test, rédaction de documentation ) pour finir par la démonstration
+                        client.</p>
+                    <p>Je suis dans la capacité de développer un projet en <span>PHP7 et Symfony 4 et Twig</span> qui étaient les
+                        langages sur lesquels j’avais choisi de me spécialiser. Je peux également produire du JavaScript et
+                        je maîtrise le <span>HTML, CSS</span> et les outils comme <span>Api Rest, MySQL, Github et Zenhub</span>.</p>
+                    <p>Aujourd’hui, à la recherche de la bonne opportunité, <span>je m’autoforme en JavaScript</span> pour compléter ma
+                        formation initiale et pouvoir implémenter de nouvelles fonctionnalité à mes <span>projets encours</span>, et
+                        continue de m’exercer à l’algorithmie.</p>
+                    <p><span>Sérieux, motivé, bienveillant et heureux</span> dans la vie, je suis une <span>personne de confiance</span> sur qui mes
+                        collaborateurs peuvent compter. Je suis tout aussi à l’aise sur du <span>travail d’équipe</span> que sur des tâches
+                        qui demande de l’<span>autonomie</span>.</p>
+                    <p>Je terminerai en vous précisant que le développement web n’est une opportunité mais le choix
+                        d’une <span>reconversion professionnelle réfléchie et préparée</span> pour laquelle je m’investis et m’engage au
+                        maximum pour réussir à atteindre mon <span>objectif d’être diplômé</span> l’an prochain.</p>
+                    <p>N'ésitez pas à prendre contact avec moi, je serai enchanté de vous présenter plus en détail mes ambitions</p>
+                </div>
+
                 <hr class="my-4">
                 <p class="lead">
                     <a class="btn btn-std btn-lg" href="{{ '/pdf/CV.pdf' }}" download="CV_Gaget_Nicolas.pdf" role="button"> Télécharger mon CV</a>
